@@ -1,0 +1,321 @@
+E:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.exe.config
+E:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.exe
+E:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.pdb
+E:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\FluentValidation.dll
+E:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\MySql.Data.dll
+E:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\Tulpep.NotificationWindow.dll
+E:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\FluentValidation.xml
+E:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.csprojResolveAssemblyReference.cache
+E:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.Properties.Resources.resources
+E:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.csproj.GenerateResource.Cache
+E:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.exe
+E:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.pdb
+E:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.frmMain.resources
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.exe.config
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.exe
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.pdb
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.exe
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.pdb
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.Properties.Resources.resources
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.frmMain.resources
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.csproj.GenerateResource.Cache
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.CategoryUC.resources
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmCategory.resources
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.BrandUC.resources
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmBrand.resources
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\MetroFramework.Design.dll
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmUnitCollection.resources
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.MeasuringUnitsUC.resources
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmSuplier.resources
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.SupplierUC.resources
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmAddress.resources
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmInventorySettings.resources
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProduct.resources
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.ProductUC.resources
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmPriceItem.resources
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\Zen.Barcode.Core.dll
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.StockInUC.resources
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProductList.resources
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.StockAdjustmentUC.resources
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.CompanyProfileUC.resources
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmPOS.resources
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.csprojResolveAssemblyReference.cache
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmUnitGroups.resources
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProductInquiry.resources
+C:\Users\Jon  Rey L. Lumayag\Desktop\VIsual Studio Project\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmSettlePayment.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.exe.config
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.exe
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.pdb
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.exe
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.pdb
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\MetroFramework.Design.dll
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\MetroFramework.Fonts.dll
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\Zen.Barcode.Core.dll
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.csprojResolveAssemblyReference.cache
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.Properties.Resources.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmAddress.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmInventorySettings.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmPOS.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmPriceItem.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProduct.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProductInquiry.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProductList.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmSettlePayment.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmSuplier.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmUnitCollection.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmBrand.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmCategory.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.frmMain.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmUnitGroups.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.BrandUC.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.CategoryUC.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.CompanyProfileUC.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.MeasuringUnitsUC.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.ProductUC.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.StockAdjustmentUC.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.StockInUC.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.SupplierUC.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.csproj.GenerateResource.Cache
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmDiscount.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmUser.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.UserUC.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmLogin.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.frmChangePass.resources
+G:\Visual Studio Projects\c#\Client\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmSetup.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.exe.config
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.exe
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.pdb
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.exe
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.pdb
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\MySql.Data.dll
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\Zen.Barcode.Core.dll
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\MySql.Data.xml
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.csprojResolveAssemblyReference.cache
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.Properties.Resources.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmAddress.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmDiscount.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmInventorySettings.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmLogin.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmPOS.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmPriceItem.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProduct.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProductInquiry.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProductList.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmSettlePayment.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmSetup.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmSuplier.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmUnitCollection.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmBrand.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmCategory.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.frmMain.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmUnitGroups.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmUser.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.frmChangePass.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.BrandUC.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.CategoryUC.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.CompanyProfileUC.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.MeasuringUnitsUC.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.ProductUC.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.StockAdjustmentUC.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.StockInUC.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.SupplierUC.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.UserUC.resources
+D:\Visual Studio Projects\Clients\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.csproj.GenerateResource.Cache
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.exe.config
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.exe
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.pdb
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\FluentValidation.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\MetroFramework.Design.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\MetroFramework.Fonts.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\MySql.Data.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\Tulpep.NotificationWindow.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\Zen.Barcode.Core.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\Microsoft.SqlServer.Types.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\FluentValidation.xml
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.Properties.Resources.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmAddress.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmAdminAccess.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmCancelOrder.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmChange.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmDailySales.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmDiscount.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmInventorySettings.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmLogin.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmPOS.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmPriceItem.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmPrintPreview.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProduct.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProductInquiry.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProductList.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmSettlePayment.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmSetup.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmSuplier.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmUnitCollection.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmBrand.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmCategory.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.frmMain.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmUnitGroups.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmUser.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.frmChangePass.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.BrandUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.CategoryUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.CompanyProfileUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.DailySalesUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.MeasuringUnitsUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.ProductUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.ReportsUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.StockAdjustmentUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.StockInUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.SupplierUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.UserUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.csproj.GenerateResource.Cache
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\RdlCompile.cache
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\RdlCompile.compiled
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.exe
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.pdb
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.DashboardUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProductListSale.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.SaleEventUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmLoadingScreen.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.csprojResolveAssemblyReference.cache
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.exe.config
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.exe
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.pdb
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.exe
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.pdb
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\FluentValidation.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\MetroFramework.Design.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\MetroFramework.Fonts.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\MySql.Data.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\Tulpep.NotificationWindow.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\Zen.Barcode.Core.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\FluentValidation.xml
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.Properties.Resources.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmAddress.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmAdminAccess.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmCancelOrder.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmChange.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmDailySales.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmDiscount.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmInventorySettings.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmLoadingScreen.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmLogin.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmPOS.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmPriceItem.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmPrintPreview.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProduct.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProductInquiry.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProductList.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProductListSale.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmSettlePayment.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmSetup.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmSuplier.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmUnitCollection.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmBrand.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmCategory.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.frmMain.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmUnitGroups.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmUser.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.frmChangePass.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.BrandUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.CategoryUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.CompanyProfileUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.DailySalesUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.DashboardUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.MeasuringUnitsUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.ProductUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.ReportsUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.SaleEventUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.StockAdjustmentUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.StockInUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.SupplierUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.UserUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.csproj.GenerateResource.Cache
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\RdlCompile.cache
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\RdlCompile.compiled
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.InventoryUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmEditStockPrice.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\Dapper.dll
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\Dapper.xml
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmExpenseCat.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.ExpenseCatUC.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmExpenses.resources
+G:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.ExpensesUC.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.exe.config
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.exe
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.pdb
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.exe
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.pdb
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\Dapper.dll
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\FluentValidation.dll
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\MySql.Data.dll
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\Tulpep.NotificationWindow.dll
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\Zen.Barcode.Core.dll
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\Dapper.xml
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\FluentValidation.xml
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.csprojResolveAssemblyReference.cache
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.Properties.Resources.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmAddress.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmAdminAccess.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmCancelOrder.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmChange.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmDailySales.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmDiscount.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmEditStockPrice.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmExpenseCat.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmExpenses.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmInventorySettings.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmLoadingScreen.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmLogin.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmPOS.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmPriceItem.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmPrintPreview.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProduct.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProductInquiry.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProductList.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProductListSale.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmSettlePayment.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmSetup.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmSuplier.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmUnitCollection.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmBrand.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmCategory.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.frmMain.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmUnitGroups.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmUser.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.frmChangePass.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.BrandUC.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.CategoryUC.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.CompanyProfileUC.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.DailySalesUC.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.DashboardUC.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.ExpenseCatUC.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.ExpensesUC.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.InventoryUC.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.MeasuringUnitsUC.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.ProductUC.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.ReportsUC.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.SaleEventUC.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.StockAdjustmentUC.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.StockInUC.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.SupplierUC.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.UserUC.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.csproj.GenerateResource.Cache
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\RdlCompile.cache
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\RdlCompile.compiled
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmExpiryItems.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmCriticalItems.resources

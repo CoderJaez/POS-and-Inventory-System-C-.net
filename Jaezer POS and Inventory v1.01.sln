@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jaezer POS and Inventory", "Jaezer POS and Inventory\Jaezer POS and Inventory.csproj", "{B858F7C7-CD25-41FA-A720-AAEC91C484F2}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Jaezer Tech POS", "Jaezer Tech POS\Jaezer Tech POS.vdproj", "{D13803D2-2570-4615-8E02-4FEAA5D05275}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B858F7C7-CD25-41FA-A720-AAEC91C484F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B858F7C7-CD25-41FA-A720-AAEC91C484F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B858F7C7-CD25-41FA-A720-AAEC91C484F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B858F7C7-CD25-41FA-A720-AAEC91C484F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D13803D2-2570-4615-8E02-4FEAA5D05275}.Debug|Any CPU.ActiveCfg = Debug
+		{D13803D2-2570-4615-8E02-4FEAA5D05275}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
