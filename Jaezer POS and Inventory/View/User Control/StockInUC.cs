@@ -42,6 +42,19 @@ namespace Jaezer_POS_and_Inventory.View.User_Control
             SupplierList();
         }
 
+        public StockInUC(DataTable items)
+        {
+            InitializeComponent();
+            ProductListDG.Controls.Add(dtp);
+            dtp.Visible = false;
+            dtp.Format = DateTimePickerFormat.Short;
+            dtp.ValueChanged += new EventHandler(dtp_ValueChanged);
+            _Filters();
+            _FiltersInit();
+            SupplierList();
+            AddToList(items);
+        }
+
         struct DataParams
         {
             public int Process;
@@ -178,7 +191,7 @@ namespace Jaezer_POS_and_Inventory.View.User_Control
         {
             foreach (DataRow item in items.Rows)
             {
-                ProductListDG.Rows.Add(item["ProdID"].ToString(), ProductListDG.Rows.Count + 1, item["ProductName"].ToString(), item["hasExpiry"]);
+                ProductListDG.Rows.Add(item["ProdID"].ToString(), ProductListDG.Rows.Count + 1,item["BaseQty"].ToString(), bool.Parse(item["HasExpiry"].ToString()), item["ProductName"].ToString(), bool.Parse(item["HasExpiry"].ToString()) ? "" : "No Expiry Date");
             }
         }
         public void AddToList(DataGridViewRow item)

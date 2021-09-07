@@ -524,19 +524,29 @@ namespace Jaezer_POS_and_Inventory.Model
             }
 
         }
-        public List<IProductCart> SoldItems(string dFrom, string dTo, string userID, string search)
+        private int totalRows;
+
+        public int TotalRows
+        {
+            get { return totalRows; }
+            set { totalRows = value; }
+        }
+
+        public List<IProductCart> SoldItems(string dFrom, string dTo, string userID, string search, int start = 0, int limit = 50, bool isReport = true)
         {
             var list = new List<IProductCart>();
+            string _limit = $"LIMIT {start}, {limit}";
             try
             {
                 using (con = new MySqlConnection(ConnString))
                 {
-
-                    using (cmd = new MySqlCommand($"select sold_items.*,  ( i.totalAmntPurchase / i.totalQtyPurchase) AS costPrice from sold_items inner join inventory as  i on i.prodID = sold_items.prodID where sold_items.sdate between '{dFrom}' and '{dTo}' and sold_items.userID like '%{userID}%'  and ( sold_items.invoice like @Invoice or sold_items.productName like @Product ) order by sold_items.catID DESC ", con))
+                    con.Open();
+                    MySqlTransaction tr = con.BeginTransaction();
+                    using (cmd = new MySqlCommand($"select sold_items.*,  ( i.totalAmntPurchase / i.totalQtyPurchase) AS costPrice from sold_items inner join inventory as  i on i.prodID = sold_items.prodID where sold_items.sdate between '{dFrom}' and '{dTo}' and sold_items.userID like '%{userID}%'  and ( sold_items.invoice like @Invoice or sold_items.productName like @Product ) order by sold_items.catID DESC {(isReport ? "": _limit)} ", con))
                         cmd.Parameters.AddWithValue("@Invoice", $"%{search}%");
                         cmd.Parameters.AddWithValue("@Product", $"%{search}%");
                     {
-                        con.Open();
+                     
                         using (MySqlDataReader rd = cmd.ExecuteReader())
                         {
                             while (rd.Read())
@@ -559,6 +569,20 @@ namespace Jaezer_POS_and_Inventory.Model
                             }
                         }
                     }
+
+                    using (cmd = new MySqlCommand($"SELECT COUNT(*) AS totalRows from sold_items inner join inventory as  i on i.prodID = sold_items.prodID where sold_items.sdate between '{dFrom}' and '{dTo}' and sold_items.userID like '%{userID}%'  and ( sold_items.invoice like @Invoice or sold_items.productName like @Product )", con))
+                    {
+                        cmd.Parameters.AddWithValue("@Invoice", $"%{search}%");
+                        cmd.Parameters.AddWithValue("@Product", $"%{search}%");
+
+                        using (MySqlDataReader rd = cmd.ExecuteReader())
+                        {
+                            if (rd.Read())
+                                totalRows = rd.GetInt32("totalRows");
+                        }
+                    }
+
+                    tr.Commit();
                 }
             }
             catch (Exception ex)

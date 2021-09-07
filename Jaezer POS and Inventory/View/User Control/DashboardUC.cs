@@ -29,7 +29,7 @@ namespace Jaezer_POS_and_Inventory.View.User_Control
 
         private void OnhandItems_Clicked(object sender, EventArgs e)
         {
-            frmCriticalItems items = new frmCriticalItems();
+            frmCriticalItems items = new frmCriticalItems(_main);
             items.ShowDialog();
         }
 

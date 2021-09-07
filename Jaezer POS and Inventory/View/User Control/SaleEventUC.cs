@@ -96,11 +96,7 @@ namespace Jaezer_POS_and_Inventory.View.User_Control
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            if (!CheckAllCB.Checked)
-            {
-                MessageBox.Show("No Row/s Selected");
-                return;
-            }
+            
             var list = new List<ProductPrice>();
             foreach (DataGridViewRow item in ProdSaleDG.Rows)
             {
@@ -115,6 +111,12 @@ namespace Jaezer_POS_and_Inventory.View.User_Control
                     });
                 }
             }
+
+            if (list.Count() <= 0)
+            {
+                MessageBox.Show("No Row/s Selected");
+                return;
+            }
             frmProductListSale frm = new frmProductListSale(this);
             frm.ProductInfoList(list);
             frm.ShowDialog();
@@ -122,26 +124,29 @@ namespace Jaezer_POS_and_Inventory.View.User_Control
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if(!CheckAllCB.Checked)
+            var list = new List<ProductPrice>();
+           
+            foreach (DataGridViewRow item in ProdSaleDG.Rows)
+            {
+                if ((bool)item.Cells["check"].Value)
+                {
+                    list.Add(new ProductPrice
+                    {
+                        PriceID = (int)item.Cells["prcID"].Value,
+                        SPrice = 0,
+                        SDateFrm = "0000-00-00",
+                        SDateTo = "0000-00-00",
+                        IsSale = false
+                    });
+                }
+            }
+
+            if (list.Count() <= 0)
             {
                 MessageBox.Show("No Row/s Selected");
                 return;
             }
 
-            var list = new List<ProductPrice>();
-            foreach (DataGridViewRow item in ProdSaleDG.Rows)
-            {
-                if ((bool)item.Cells["check"].Value)
-                {
-                    list.Add(new ProductPrice()
-                    {
-                        PriceID = (int)ProdSaleDG.CurrentRow.Cells["prcID"].Value,
-                        ProductName = ProdSaleDG.CurrentRow.Cells["ProdName"].Value.ToString(),
-                        Price = (decimal)ProdSaleDG.CurrentRow.Cells["UPrice"].Value,
-                        SPrice = (decimal)ProdSaleDG.CurrentRow.Cells["SPrice"].Value
-                    });
-                }
-            }
 
             var result = MessageBox.Show("Delete Selected Row?", stmodel.AppName, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)

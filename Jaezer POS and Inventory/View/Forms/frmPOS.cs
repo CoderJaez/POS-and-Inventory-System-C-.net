@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Jaezer_POS_and_Inventory.Model;
 using FluentValidation.Results;
+
 namespace Jaezer_POS_and_Inventory.View.Forms
 {
     public partial class frmPOS : Form, IPaymentTransaction
@@ -22,6 +23,7 @@ namespace Jaezer_POS_and_Inventory.View.Forms
             UserInfo = _user;
             lblName.Text = UserInfo.Fullname ;
             NewTransaction();
+            cbPrintReciept.Checked = Properties.Settings.Default.enableRP;
         }
 
         public DataGridViewRow ProductItem { get { return ProductCartDG.CurrentRow; } }
@@ -355,7 +357,7 @@ namespace Jaezer_POS_and_Inventory.View.Forms
                 {
                     AddToCart(obj);
                     SearchTxt.Text = "";
-                }
+                } 
             }
         }
 
@@ -424,6 +426,12 @@ namespace Jaezer_POS_and_Inventory.View.Forms
         private void frmPOS_Shown(object sender, EventArgs e)
         {
             SearchTxt.Focus();
+        }
+
+        private void cbPrintReciept_CheckedChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.enableRP = cbPrintReciept.Checked ? true : false;
+            Properties.Settings.Default.Save();
         }
     }
 }

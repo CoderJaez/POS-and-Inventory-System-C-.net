@@ -120,15 +120,14 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="txtSearch.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAGPSURBVDhPY6A6SEhI0E1KSmpNTExcAWRPB7L9GhoamKDSuEFaWhorUNPMpKzCf0kdy/8nzzj0
-        P6l/8//E4qb/QPHzKSkpilCl2AFQ0bSk6gn/UzZ9/J+5/fv/yv3f/+ft+vY/Zeu3/0mTd/9PTEq6FR0d
-        zQdVjgqAmo0Ss4v+pWz68L/+8I//8y7+/N9y9Pv/KWd+/p8GxKkgQxpng1zSDNWCCkB+TupaDbatYPc3
-        sAYQG8YHs5fdBhlwHaoFFQADa0ny9INwTVgx0GtAA75DtaACoAumJk/chl0jDK95BjLgOVQLKgBKhCSW
-        tmLXCMXJE7aCDFgG1YIKQkNDmYGS55KAirBqXnr7f0Jq5s/k5GQdqBZMAIpnoCF3kxpmADXc/J+y5cv/
-        lNVP/yf3bfyfmJb9Eyj3OT4+vhqqHDuIiooSBCpsBOJbQPwXiN8A8WJQ6oxNSMiw8w767xkUtguqnHTg
-        Hhi20Nzd/79HYNgBqBDpwNU/dCvIEM+g8JlQIdKBe2D4Qk//UC0olxLAwAAA3NEeDHP0ek8AAAAASUVO
-        RK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAY9JREFUOE9j
+        oDpISEjQTUpKak1MTFwBZE8Hsv0aGhqYoNK4QVpaGitQ08ykrMJ/SR3L/yfPOPQ/qX/z/8Tipv9A8fMp
+        KSmKUKXYAVDRtKTqCf9TNn38n7n9+//K/d//5+369j9l67f/SZN3/09MSroVHR3NB1WOCoCajRKzi/6l
+        bPrwv/7wj//zLv7833L0+/8pZ37+nwbEqSBDGmeDXNIM1YIKQH5O6loNtq1g9zewBhAbxgezl90GGXAd
+        qgUVAANrSfL0g3BNWDHQa0ADvkO1oAKgC6YmT9yGXSMMr3kGMuA5VAsqAEqEJJa2YtcIxckTtoIMWAbV
+        ggpCQ0OZgZLnkoCKsGpeevt/Qmrmz+TkZB2oFkwAimegIXeTGmYANdz8n7Lly/+U1U//J/dt/J+Ylv0T
+        KPc5Pj6+GqocO4iKihIEKmwE4ltA/BeI3wDxYlDqjE1IyLDzDvrvGRS2C6qcdOAeGLbQ3N3/v0dg2AGo
+        EOnA1T90K8gQz6DwmVAh0oF7YPhCT/9QLSiXEsDAAADc0R4Mc/R6TwAAAABJRU5ErkJggg==
 </value>
   </data>
   <metadata name="_n.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -143,7 +142,10 @@
   <metadata name="_hasExpiry.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="dataGridViewImageColumn1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="_BaseQty.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="itemDelete.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="n.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -156,6 +158,9 @@
     <value>True</value>
   </metadata>
   <metadata name="hasExpiry.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="BaseQty.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="Qty.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

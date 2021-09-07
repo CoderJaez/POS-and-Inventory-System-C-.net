@@ -130,5 +130,17 @@ namespace Jaezer_POS_and_Inventory.Properties {
                 this["UserID"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool enableRP {
+            get {
+                return ((bool)(this["enableRP"]));
+            }
+            set {
+                this["enableRP"] = value;
+            }
+        }
     }
 }

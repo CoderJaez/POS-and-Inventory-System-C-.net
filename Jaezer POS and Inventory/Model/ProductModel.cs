@@ -11,6 +11,23 @@ namespace Jaezer_POS_and_Inventory.Model
 {
     class ProductModel:DBConnection
     {
+
+        private int totalRows;
+
+        public int TotalRows
+        {
+            get { return totalRows; }
+            set { totalRows = value; }
+        }
+
+        private int filterRows;
+
+        public int FilteredRows
+        {
+            get { return filterRows; }
+            set { filterRows = value; }
+        }
+
         public long insert(Product obj)
         {
             try
@@ -77,6 +94,13 @@ namespace Jaezer_POS_and_Inventory.Model
                     using (cmd = new MySqlCommand($"UPDATE tbl_product SET deleted = true where id = {id}", con))
                     {
                         con.Open();
+                        MySqlTransaction tr = con.BeginTransaction();
+                        cmd.ExecuteNonQuery();
+
+                        cmd.CommandText = $"UPDATE tbl_unit_grp set deleted = true where prodID = {id}";
+                        cmd.ExecuteNonQuery();
+
+                        cmd.CommandText = $"UPDATE tbl_pricing set deleted = true  where  prodID = {id}";
                         cmd.ExecuteNonQuery();
                         return true;
                     }
@@ -99,39 +123,53 @@ namespace Jaezer_POS_and_Inventory.Model
                     {
                         query = "update tbl_product set";
                         foreach (var id in ids)
-                            query += $" delete = CASE WHEN id = {id} true else deleted END,";
+                            query += $" deleted = CASE WHEN id = {id} THEN true else deleted END,";
 
                         query = query.Remove(query.Length - 1, 1);
                         query += $" where id in({string.Join(",",ids)})";
                         cmd.CommandText = query;
+                        con.Open();
+                        MySqlTransaction tr = con.BeginTransaction();
                         cmd.ExecuteNonQuery();
+
+                        foreach(int id in ids)
+                        {
+                            cmd.CommandText = $"UPDATE tbl_unit_grp set deleted = true where prodID = {id}";
+                            cmd.ExecuteNonQuery();
+
+                            cmd.CommandText = $"UPDATE tbl_pricing set prodID = {id}";
+                            cmd.ExecuteNonQuery();
+                        }
                         return true;
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message + $"\n{cmd.CommandText}");
                 return false;
             }
         }
 
 
-        public List<Product> getProduct(string search)
+        public List<Product> getProduct(string search, int start = 0, int limit = 50)
         {
             List<Product> list = new List<Product>();
             try
             {
                 using (con = new MySqlConnection(ConnString))
                 {
+                    con.Open();
+                    MySqlTransaction tr = con.BeginTransaction();
                     using (cmd = new MySqlCommand("", con))
                     {
-                        con.Open();
-                        cmd.CommandText = "select p.id, p.productName, b.brand, c.category, p.reorder, p.hasExpiry, units.unitCode, units.qty from tbl_product as p inner join tbl_brand as b on b.id = p.brandID inner join tbl_category as c on c.id = p.catID inner join units on units.id = p.ugID where p.deleted = false and (p.productName LIKE @ProductName  or b.brand LIKE @BrandName or c.category LIKE @Category or p.catID LIKE  @CatID) order by p.productName ASC";
+                        cmd.CommandText = "select p.id, p.productName, b.brand, c.category, p.reorder, p.hasExpiry, units.unitCode, units.qty from tbl_product as p inner join tbl_brand as b on b.id = p.brandID inner join tbl_category as c on c.id = p.catID inner join units on units.id = p.ugID where p.deleted = false and (p.productName LIKE @ProductName  or b.brand LIKE @BrandName or c.category LIKE @Category or p.catID LIKE  @CatID) order by p.productName ASC LIMIT @Start, @Limit";
                         cmd.Parameters.AddWithValue("@CatID", $"%{search}%");
                         cmd.Parameters.AddWithValue("@ProductName", $"%{search}%");
                         cmd.Parameters.AddWithValue("@Category", $"%{search}%");
                         cmd.Parameters.AddWithValue("@BrandName", $"%{search}%");
+                        cmd.Parameters.AddWithValue("@Start", start);
+                        cmd.Parameters.AddWithValue("@Limit", limit);
                         using (MySqlDataReader reader = cmd.ExecuteReader())
                         {
                            while(reader.Read())
@@ -149,7 +187,35 @@ namespace Jaezer_POS_and_Inventory.Model
                             }
                         }
                     }
-                }
+
+                    //Get total rows
+                    using (cmd = new MySqlCommand("SELECT COUNT(*) AS totalRows from tbl_product as p inner join tbl_brand as b on b.id = p.brandID inner join tbl_category as c on c.id = p.catID inner join units on units.id = p.ugID where p.deleted = false",con))
+                    {
+                        using (MySqlDataReader rd = cmd.ExecuteReader())
+                        {
+                            if (rd.Read())
+                                totalRows = rd.GetInt32("totalRows");
+                        }
+                    }
+
+                    //Get Filtered Rows
+                    using (cmd = new MySqlCommand("", con))
+                    {
+                        cmd.CommandText = "select count(*) as filteredRows from tbl_product as p inner join tbl_brand as b on b.id = p.brandID inner join tbl_category as c on c.id = p.catID inner join units on units.id = p.ugID where p.deleted = false and (p.productName LIKE @ProductName  or b.brand LIKE @BrandName or c.category LIKE @Category or p.catID LIKE  @CatID) order by p.productName ASC";
+                        cmd.Parameters.AddWithValue("@CatID", $"%{search}%");
+                        cmd.Parameters.AddWithValue("@ProductName", $"%{search}%");
+                        cmd.Parameters.AddWithValue("@Category", $"%{search}%");
+                        cmd.Parameters.AddWithValue("@BrandName", $"%{search}%");
+
+                        using (MySqlDataReader rd = cmd.ExecuteReader())
+                        {
+                            if (rd.Read())
+                                filterRows = rd.GetInt32("filteredRows");
+                        }
+                    }
+                }//Con
+
+               
             }
             catch (Exception ex)
             {

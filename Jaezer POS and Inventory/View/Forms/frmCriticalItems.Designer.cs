@@ -28,34 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCriticalItems));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCriticalItems));
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.txtSearch = new MetroFramework.Controls.MetroTextBox();
             this.btnStockin = new System.Windows.Forms.Button();
             this.ItemsDG = new System.Windows.Forms.DataGridView();
             this.CriticalItemsDG = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.txtSearch = new MetroFramework.Controls.MetroTextBox();
-            this._n = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._ProdID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._hasExpiry = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.n = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProdID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hasExpiry = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.BaseQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.reorder = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.insert = new System.Windows.Forms.DataGridViewImageColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnClose = new System.Windows.Forms.Button();
+            this._n = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._ProdID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._hasExpiry = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this._BaseQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemDelete = new System.Windows.Forms.DataGridViewImageColumn();
             this.mainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ItemsDG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CriticalItemsDG)).BeginInit();
@@ -76,6 +78,41 @@
             this.mainPanel.Size = new System.Drawing.Size(820, 501);
             this.mainPanel.TabIndex = 0;
             // 
+            // txtSearch
+            // 
+            // 
+            // 
+            // 
+            this.txtSearch.CustomButton.Image = null;
+            this.txtSearch.CustomButton.Location = new System.Drawing.Point(186, 1);
+            this.txtSearch.CustomButton.Name = "";
+            this.txtSearch.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtSearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtSearch.CustomButton.TabIndex = 1;
+            this.txtSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtSearch.CustomButton.UseSelectable = true;
+            this.txtSearch.CustomButton.Visible = false;
+            this.txtSearch.DisplayIcon = true;
+            this.txtSearch.Icon = ((System.Drawing.Image)(resources.GetObject("txtSearch.Icon")));
+            this.txtSearch.Lines = new string[0];
+            this.txtSearch.Location = new System.Drawing.Point(21, 95);
+            this.txtSearch.MaxLength = 32767;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PasswordChar = '\0';
+            this.txtSearch.PromptText = "Search Productname";
+            this.txtSearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtSearch.SelectedText = "";
+            this.txtSearch.SelectionLength = 0;
+            this.txtSearch.SelectionStart = 0;
+            this.txtSearch.ShortcutsEnabled = true;
+            this.txtSearch.Size = new System.Drawing.Size(208, 23);
+            this.txtSearch.TabIndex = 19;
+            this.txtSearch.UseSelectable = true;
+            this.txtSearch.WaterMark = "Search Productname";
+            this.txtSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtSearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            // 
             // btnStockin
             // 
             this.btnStockin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
@@ -89,6 +126,7 @@
             this.btnStockin.TabIndex = 18;
             this.btnStockin.Text = "&Add Stocks";
             this.btnStockin.UseVisualStyleBackColor = false;
+            this.btnStockin.Click += new System.EventHandler(this.btnStockin_Click);
             // 
             // ItemsDG
             // 
@@ -115,7 +153,8 @@
             this._ProdID,
             this._ProductName,
             this._hasExpiry,
-            this.dataGridViewImageColumn1});
+            this._BaseQty,
+            this.itemDelete});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -145,6 +184,7 @@
             this.ItemsDG.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ItemsDG.Size = new System.Drawing.Size(236, 357);
             this.ItemsDG.TabIndex = 17;
+            this.ItemsDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ItemsDG_CellContentClick);
             // 
             // CriticalItemsDG
             // 
@@ -171,6 +211,7 @@
             this.ProdID,
             this.ProductName,
             this.hasExpiry,
+            this.BaseQty,
             this.Qty,
             this.reorder,
             this.insert});
@@ -204,6 +245,65 @@
             this.CriticalItemsDG.Size = new System.Drawing.Size(545, 357);
             this.CriticalItemsDG.TabIndex = 17;
             this.CriticalItemsDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CriticalItemsDG_CellClick);
+            // 
+            // n
+            // 
+            this.n.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.n.HeaderText = "";
+            this.n.Name = "n";
+            this.n.ReadOnly = true;
+            this.n.Width = 27;
+            // 
+            // ProdID
+            // 
+            this.ProdID.HeaderText = "ProductID";
+            this.ProdID.Name = "ProdID";
+            this.ProdID.ReadOnly = true;
+            this.ProdID.Visible = false;
+            // 
+            // ProductName
+            // 
+            this.ProductName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ProductName.HeaderText = "Product Description";
+            this.ProductName.Name = "ProductName";
+            this.ProductName.ReadOnly = true;
+            // 
+            // hasExpiry
+            // 
+            this.hasExpiry.HeaderText = "Has Expiry";
+            this.hasExpiry.Name = "hasExpiry";
+            this.hasExpiry.ReadOnly = true;
+            this.hasExpiry.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.hasExpiry.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.hasExpiry.Visible = false;
+            // 
+            // BaseQty
+            // 
+            this.BaseQty.HeaderText = "BaseQty";
+            this.BaseQty.Name = "BaseQty";
+            this.BaseQty.ReadOnly = true;
+            this.BaseQty.Visible = false;
+            // 
+            // Qty
+            // 
+            this.Qty.HeaderText = "Qty";
+            this.Qty.Name = "Qty";
+            this.Qty.ReadOnly = true;
+            // 
+            // reorder
+            // 
+            this.reorder.HeaderText = "Reorder";
+            this.reorder.Name = "reorder";
+            this.reorder.ReadOnly = true;
+            // 
+            // insert
+            // 
+            this.insert.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.insert.HeaderText = "";
+            this.insert.Image = global::Jaezer_POS_and_Inventory.Properties.Resources.icons8_curved_arrow_16;
+            this.insert.Name = "insert";
+            this.insert.ReadOnly = true;
+            this.insert.Width = 11;
             // 
             // panel1
             // 
@@ -254,41 +354,6 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // txtSearch
-            // 
-            // 
-            // 
-            // 
-            this.txtSearch.CustomButton.Image = null;
-            this.txtSearch.CustomButton.Location = new System.Drawing.Point(186, 1);
-            this.txtSearch.CustomButton.Name = "";
-            this.txtSearch.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtSearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtSearch.CustomButton.TabIndex = 1;
-            this.txtSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtSearch.CustomButton.UseSelectable = true;
-            this.txtSearch.CustomButton.Visible = false;
-            this.txtSearch.DisplayIcon = true;
-            this.txtSearch.Icon = ((System.Drawing.Image)(resources.GetObject("txtSearch.Icon")));
-            this.txtSearch.Lines = new string[0];
-            this.txtSearch.Location = new System.Drawing.Point(21, 95);
-            this.txtSearch.MaxLength = 32767;
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.PasswordChar = '\0';
-            this.txtSearch.PromptText = "Search Productname";
-            this.txtSearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtSearch.SelectedText = "";
-            this.txtSearch.SelectionLength = 0;
-            this.txtSearch.SelectionStart = 0;
-            this.txtSearch.ShortcutsEnabled = true;
-            this.txtSearch.Size = new System.Drawing.Size(208, 23);
-            this.txtSearch.TabIndex = 19;
-            this.txtSearch.UseSelectable = true;
-            this.txtSearch.WaterMark = "Search Productname";
-            this.txtSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtSearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
-            // 
             // _n
             // 
             this._n.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
@@ -320,66 +385,21 @@
             this._hasExpiry.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this._hasExpiry.Visible = false;
             // 
-            // dataGridViewImageColumn1
+            // _BaseQty
             // 
-            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = global::Jaezer_POS_and_Inventory.Properties.Resources.icons8_remove_16;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.ReadOnly = true;
-            this.dataGridViewImageColumn1.Width = 11;
+            this._BaseQty.HeaderText = "BaseQty";
+            this._BaseQty.Name = "_BaseQty";
+            this._BaseQty.ReadOnly = true;
+            this._BaseQty.Visible = false;
             // 
-            // n
+            // itemDelete
             // 
-            this.n.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.n.HeaderText = "";
-            this.n.Name = "n";
-            this.n.ReadOnly = true;
-            this.n.Width = 11;
-            // 
-            // ProdID
-            // 
-            this.ProdID.HeaderText = "ProductID";
-            this.ProdID.Name = "ProdID";
-            this.ProdID.ReadOnly = true;
-            this.ProdID.Visible = false;
-            // 
-            // ProductName
-            // 
-            this.ProductName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ProductName.HeaderText = "Product Description";
-            this.ProductName.Name = "ProductName";
-            this.ProductName.ReadOnly = true;
-            // 
-            // hasExpiry
-            // 
-            this.hasExpiry.HeaderText = "Has Expiry";
-            this.hasExpiry.Name = "hasExpiry";
-            this.hasExpiry.ReadOnly = true;
-            this.hasExpiry.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.hasExpiry.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.hasExpiry.Visible = false;
-            // 
-            // Qty
-            // 
-            this.Qty.HeaderText = "Qty";
-            this.Qty.Name = "Qty";
-            this.Qty.ReadOnly = true;
-            // 
-            // reorder
-            // 
-            this.reorder.HeaderText = "Reorder";
-            this.reorder.Name = "reorder";
-            this.reorder.ReadOnly = true;
-            // 
-            // insert
-            // 
-            this.insert.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.insert.HeaderText = "";
-            this.insert.Image = global::Jaezer_POS_and_Inventory.Properties.Resources.icons8_curved_arrow_16;
-            this.insert.Name = "insert";
-            this.insert.ReadOnly = true;
-            this.insert.Width = 11;
+            this.itemDelete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.itemDelete.HeaderText = "";
+            this.itemDelete.Image = global::Jaezer_POS_and_Inventory.Properties.Resources.icons8_remove_16;
+            this.itemDelete.Name = "itemDelete";
+            this.itemDelete.ReadOnly = true;
+            this.itemDelete.Width = 11;
             // 
             // frmCriticalItems
             // 
@@ -414,17 +434,19 @@
         private System.Windows.Forms.Button btnStockin;
         private System.Windows.Forms.DataGridView ItemsDG;
         private MetroFramework.Controls.MetroTextBox txtSearch;
-        private System.Windows.Forms.DataGridViewTextBoxColumn _n;
-        private System.Windows.Forms.DataGridViewTextBoxColumn _ProdID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn _ProductName;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn _hasExpiry;
-        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn n;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProdID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
         private System.Windows.Forms.DataGridViewCheckBoxColumn hasExpiry;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BaseQty;
         private System.Windows.Forms.DataGridViewTextBoxColumn Qty;
         private System.Windows.Forms.DataGridViewTextBoxColumn reorder;
         private System.Windows.Forms.DataGridViewImageColumn insert;
+        private System.Windows.Forms.DataGridViewTextBoxColumn _n;
+        private System.Windows.Forms.DataGridViewTextBoxColumn _ProdID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn _ProductName;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn _hasExpiry;
+        private System.Windows.Forms.DataGridViewTextBoxColumn _BaseQty;
+        private System.Windows.Forms.DataGridViewImageColumn itemDelete;
     }
 }

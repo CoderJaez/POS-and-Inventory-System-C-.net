@@ -17,6 +17,7 @@ namespace Jaezer_POS_and_Inventory.View
         private bool isSettingClicked = false;
         public User UserInfo;
         public Button _StockEntry;
+        public DataTable CriticalItems;
         public frmMain(User _UserInfo)
         {
             InitializeComponent();
@@ -29,11 +30,6 @@ namespace Jaezer_POS_and_Inventory.View
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void SettingsPanel_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
 
@@ -82,31 +78,29 @@ namespace Jaezer_POS_and_Inventory.View
         {
             if (isSettingClicked)
             {
-                btnSettings.Image = Properties.Resources.icons8_collapse_arrow_16;
-                SettingsPanel.Height -= 50;
-                if (SettingsPanel.Size == SettingsPanel.MinimumSize)
+                btnSettings.Image = Properties.Resources.icons8_expand_arrow_16;
+                if (SettingsPanel.Size == SettingsPanel.MaximumSize)
                 {
                     timer1.Stop();
-                    isSettingClicked = false;
                 }
+                SettingsPanel.Height += 10;
 
             }
             else
             {
-                btnSettings.Image = Properties.Resources.icons8_expand_arrow_16;
-                SettingsPanel.Height += 50;
-                if (SettingsPanel.Size == SettingsPanel.MaximumSize)
+                btnSettings.Image = Properties.Resources.icons8_collapse_arrow_16;
+                if (SettingsPanel.Size == SettingsPanel.MinimumSize)
                 {
                     timer1.Stop();
-                    isSettingClicked = true;
                 }
+                SettingsPanel.Height -= 10;
             }
         }
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
             timer1.Start();
-            isSettingClicked = false;
+            isSettingClicked = isSettingClicked ? false:true;
             ButtonClicked(btnSettings);
         }
 
@@ -115,7 +109,7 @@ namespace Jaezer_POS_and_Inventory.View
             _StockEntry = btnStockEntry;
             timer1.Start();
             ButtonClicked(btnDashboard);
-            isSettingClicked =  true;
+            isSettingClicked =  false;
             ModuleDesc.Text = "Dashboard";
             DashboardUC uc = new DashboardUC(this);
             MainPanel.Controls.Clear();
@@ -152,9 +146,14 @@ namespace Jaezer_POS_and_Inventory.View
         {
             timer1.Start();
             ButtonClicked(btnStockEntry);
-            isSettingClicked = true;
+            isSettingClicked = false;
             ModuleDesc.Text = "Stock In";
-            StockInUC uc = new StockInUC();
+            StockInUC uc;
+            if (CriticalItems == null)
+                 uc = new StockInUC();
+            else
+                 uc = new StockInUC(CriticalItems);
+
             MainPanel.Controls.Clear();
             MainPanel.Controls.Add(uc);
             uc.Dock = MainPanel.Dock;
@@ -165,7 +164,7 @@ namespace Jaezer_POS_and_Inventory.View
         {
             timer1.Start();
             ButtonClicked(btnStockAdjustment);
-            isSettingClicked = true;
+            isSettingClicked = false;
             ModuleDesc.Text = "Stock Adjustment";
             StockAdjustmentUC uc = new StockAdjustmentUC(UserInfo);
             MainPanel.Controls.Clear();
@@ -204,7 +203,7 @@ namespace Jaezer_POS_and_Inventory.View
         {
             timer1.Start();
             ButtonClicked(btnSales);
-            isSettingClicked = true;
+            isSettingClicked = false;
             ModuleDesc.Text = "Sales History";
             DailySalesUC uc = new DailySalesUC(this);
             MainPanel.Controls.Clear();
@@ -216,7 +215,7 @@ namespace Jaezer_POS_and_Inventory.View
         {
             timer1.Start();
             ButtonClicked(btnReports);
-            isSettingClicked = true;
+            isSettingClicked = false;
             ModuleDesc.Text = "Reports";
             ReportsUC uc = new ReportsUC();
             MainPanel.Controls.Clear();
@@ -226,7 +225,7 @@ namespace Jaezer_POS_and_Inventory.View
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            isSettingClicked = true;
+            isSettingClicked = false;
             ModuleDesc.Text = "Dashboard";
             DashboardUC uc = new DashboardUC(this);
             MainPanel.Controls.Clear();
@@ -239,7 +238,7 @@ namespace Jaezer_POS_and_Inventory.View
         {
             timer1.Start();
             ButtonClicked(btnDiscount);
-            isSettingClicked = true;
+            isSettingClicked = false;
             ModuleDesc.Text = "Item Sale Discount";
             SaleEventUC uc = new SaleEventUC();
             MainPanel.Controls.Clear();
@@ -251,7 +250,7 @@ namespace Jaezer_POS_and_Inventory.View
         {
             timer1.Start();
             ButtonClicked(btnInventory);
-            isSettingClicked = true;
+            isSettingClicked = false;
             ModuleDesc.Text = "Inventory";
             InventoryUC uc = new InventoryUC();
             MainPanel.Controls.Clear();
@@ -276,7 +275,7 @@ namespace Jaezer_POS_and_Inventory.View
         {
             timer1.Start();
             ButtonClicked(btnExpenses);
-            isSettingClicked = true;
+            isSettingClicked = false;
             ModuleDesc.Text = "Expenses";
             ExpensesUC uc = new ExpensesUC();
             MainPanel.Controls.Clear();

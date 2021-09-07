@@ -35,7 +35,7 @@ namespace Jaezer_POS_and_Inventory.View.Forms
             foreach (var item in model.ProductInquiryList(SearchTxt.Text))
             {
                 price = item.Price;
-                if(item.IsSale && (DateTime.Parse(item.SDateFrm) <= DateTime.Today && DateTime.Parse(item.SDateTo) >= DateTime.Today))
+                if(item.IsSale && (DateTime.ParseExact(item.SDateFrm,"MM-dd-yyyy",null) <= DateTime.Today && DateTime.ParseExact(item.SDateTo,"MM-dd-yyyy",null) >= DateTime.Today))
                 {
                     item.ProductName +=  " SALE";
                     price = item.SPrice;

@@ -11,6 +11,8 @@ using FluentValidation.Results;
 using Jaezer_POS_and_Inventory.Model;
 using Zen.Barcode;
 using System.Drawing.Printing;
+using System.Drawing.Text;
+using System.IO;
 
 namespace Jaezer_POS_and_Inventory.View.Forms
 {
@@ -19,9 +21,17 @@ namespace Jaezer_POS_and_Inventory.View.Forms
         PricingModel model = new PricingModel();
         PriceItem obj = new PriceItem();
         PrintPreviewDialog pd = new PrintPreviewDialog();
+        PrivateFontCollection pfc = new PrivateFontCollection();
+        ToolTip toolTip;
         private bool isForUpdate;
-        int w = 223;
-        int h = 74;
+        int w = 100;
+        int h = 50;
+        int barcodes = 100;
+        int rows = 0;
+        int cols = 0;
+        int x = 20, y = 10;
+
+
         public frmPriceItem(bool forUpdate, PriceItem _obj)
         {
             InitializeComponent();
@@ -31,9 +41,12 @@ namespace Jaezer_POS_and_Inventory.View.Forms
             UnitList();
             if (isForUpdate)
                 PriceItemInfo();
+            toolTip = new ToolTip();
+            toolTip.SetToolTip(btnScanBarcode, "Scan Barcode");
+            toolTip.SetToolTip(btnGenerateBarcode, "Generate Barcode");
         }
 
-        
+
         private void UnitList()
         {
             DataTable dt = new DataTable();
@@ -117,12 +130,22 @@ namespace Jaezer_POS_and_Inventory.View.Forms
            
         }
 
+        private void ean13()
+        {
+            string barcode, check12Digits;
+            check12Digits = txtBarcode.Text.PadRight(12, '0');
+            barcode = EAN13.CODE(check12Digits);
+            pfc.AddFontFile(Directory.GetCurrentDirectory() + "/ean13.ttf");
+            labelEAN13.Font = new Font(pfc.Families[0], 24);
+            labelEAN13.Text = barcode;
+
+
+        }
         private void code128()
         {
             Zen.Barcode.Code128BarcodeDraw barcode = Zen.Barcode.BarcodeDrawFactory.Code128WithChecksum;
             var image = barcode.Draw(txtBarcode.Text, 50);
             var resultImage = new Bitmap(image.Width, image.Height + 20); // 20 is bottom padding, adjust to your text
-
             using (var graphics = Graphics.FromImage(resultImage))
             using (var font = new Font("Consolas", 10))
             using (var brush = new SolidBrush(Color.Black))
@@ -143,23 +166,56 @@ namespace Jaezer_POS_and_Inventory.View.Forms
 
         private void btnPrintPreview_Click(object sender, EventArgs e)
         {
+            rows = barcodes / 6;
+            cols = barcodes % 6;
             pd.Document = printDocument1;
             printDocument1.DefaultPageSettings.PaperSize = new PaperSize("Legal", 850, 1100);
+            (pd as Form).WindowState = FormWindowState.Maximized;
             pd.ShowDialog();
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            int x = 40, y = 10;
-            for (int i = 1; i <= 10; i++)
+            int pageHeight = (int)e.PageSettings.PrintableArea.Height;
+            //x = 10;
+            //e.Graphics.DrawString(labelEAN13.Text, new Font(pfc.Families[0], 30), new SolidBrush(Color.Black), x, y);
+            for (int i = 1; i <= rows; i++)
             {
-                x = 50;
-                for (int z = 1; z <= 3; z++)
+                //x = 50;
+                x = 20;
+                for (int z = 1; z <= 6; z++)
                 {
-                    e.Graphics.DrawImage(BarcodeImage.Image, x, y, w, h);
-                    x = x + w + 40;
+                    e.Graphics.DrawString(labelEAN13.Text, new Font(pfc.Families[0], 30), new SolidBrush(Color.Black), x, y);
+                    //x = x + w + 25;
+                    x += 130;
                 }
-                y = y + h + 35;
+                //y = y + h + 35;
+                y += 60;
+
+                if (y >= pageHeight)
+                {
+                    e.HasMorePages = true;
+                    y = 10;
+                    rows -= 13;
+                    return;
+                }
+                else
+                {
+                    e.HasMorePages = false;
+                }
+
+            }
+
+            if (cols > 1)
+            {
+                x = 20;
+                for (int z = 1; z <= cols; z++)
+                {
+                    e.Graphics.DrawString(labelEAN13.Text, new Font(pfc.Families[0], 30), new SolidBrush(Color.Black), x, y);
+                    //e.Graphics.DrawImage(BarcodeImage.Image, x, y, w, h);
+                    //x = x + w + 30;
+                    x += 130;
+                }
             }
         }
 
@@ -167,7 +223,8 @@ namespace Jaezer_POS_and_Inventory.View.Forms
         {
            if(txtBarcode.Text != "")
             {
-                code128();
+                //code128();
+                ean13();
             }
         }
 
@@ -178,6 +235,19 @@ namespace Jaezer_POS_and_Inventory.View.Forms
 
             if (e.KeyChar == '.' && (sender as TextBox).Text.IndexOf('.') > -1)
                 e.Handled = true;
+        }
+
+        private void btnScanBarcode_Click(object sender, EventArgs e)
+        {
+            txtBarcode.Enabled = true;
+            txtBarcode.Focus();
+        }
+
+        private void btnGenerateBarcode_Click(object sender, EventArgs e)
+        {
+            //txtBarcode.Text = $"63{obj.ProductID}06013451";
+            txtBarcode.Enabled = true;
+            //ean13();
         }
 
         private void frmPriceItem_Shown(object sender, EventArgs e)

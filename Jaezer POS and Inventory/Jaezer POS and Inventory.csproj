@@ -56,7 +56,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\DLLs\MySql.Data.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
@@ -79,6 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\DashboardModel.cs" />
+    <Compile Include="Model\EAN13.cs" />
     <Compile Include="Model\ExpenseModel.cs" />
     <Compile Include="Model\IBrand.cs" />
     <Compile Include="Model\ICategory.cs" />
@@ -629,12 +632,18 @@
   <ItemGroup>
     <None Include="Resources\icons8_pricing_16.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AkiNi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AkiNi %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.Build.Tasks.Git.1.0.0\build\Microsoft.Build.Tasks.Git.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Build.Tasks.Git.1.0.0\build\Microsoft.Build.Tasks.Git.props'))" />
+    <!-- <Error Condition="!Exists('..\packages\Microsoft.Build.Tasks.Git.1.0.0\build\Microsoft.Build.Tasks.Git.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Build.Tasks.Git.1.0.0\build\Microsoft.Build.Tasks.Git.props'))" /> -->
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

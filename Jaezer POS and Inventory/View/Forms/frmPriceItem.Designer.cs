@@ -34,7 +34,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnGenerateBarcode = new MetroFramework.Controls.MetroButton();
             this.txtPrice = new System.Windows.Forms.TextBox();
+            this.btnScanBarcode = new MetroFramework.Controls.MetroButton();
             this.btnPrintPreview = new MetroFramework.Controls.MetroButton();
             this.BarcodeImage = new System.Windows.Forms.PictureBox();
             this.txtUnit = new System.Windows.Forms.Label();
@@ -49,6 +51,7 @@
             this.txtBarcode = new MetroFramework.Controls.MetroTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.labelEAN13 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BarcodeImage)).BeginInit();
@@ -106,7 +109,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel2.Controls.Add(this.labelEAN13);
+            this.panel2.Controls.Add(this.btnGenerateBarcode);
             this.panel2.Controls.Add(this.txtPrice);
+            this.panel2.Controls.Add(this.btnScanBarcode);
             this.panel2.Controls.Add(this.btnPrintPreview);
             this.panel2.Controls.Add(this.BarcodeImage);
             this.panel2.Controls.Add(this.txtUnit);
@@ -126,6 +132,20 @@
             this.panel2.Size = new System.Drawing.Size(479, 268);
             this.panel2.TabIndex = 28;
             // 
+            // btnGenerateBarcode
+            // 
+            this.btnGenerateBarcode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnGenerateBarcode.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGenerateBarcode.BackgroundImage")));
+            this.btnGenerateBarcode.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnGenerateBarcode.FontWeight = MetroFramework.MetroButtonWeight.Light;
+            this.btnGenerateBarcode.Location = new System.Drawing.Point(267, 58);
+            this.btnGenerateBarcode.Name = "btnGenerateBarcode";
+            this.btnGenerateBarcode.Size = new System.Drawing.Size(20, 17);
+            this.btnGenerateBarcode.TabIndex = 42;
+            this.btnGenerateBarcode.Tag = "Generate Barcode";
+            this.btnGenerateBarcode.UseSelectable = true;
+            this.btnGenerateBarcode.Click += new System.EventHandler(this.btnGenerateBarcode_Click);
+            // 
             // txtPrice
             // 
             this.txtPrice.Location = new System.Drawing.Point(88, 112);
@@ -133,6 +153,20 @@
             this.txtPrice.Size = new System.Drawing.Size(197, 25);
             this.txtPrice.TabIndex = 7;
             this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrice_KeyPress);
+            // 
+            // btnScanBarcode
+            // 
+            this.btnScanBarcode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnScanBarcode.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnScanBarcode.BackgroundImage")));
+            this.btnScanBarcode.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnScanBarcode.FontWeight = MetroFramework.MetroButtonWeight.Light;
+            this.btnScanBarcode.Location = new System.Drawing.Point(245, 58);
+            this.btnScanBarcode.Name = "btnScanBarcode";
+            this.btnScanBarcode.Size = new System.Drawing.Size(20, 18);
+            this.btnScanBarcode.TabIndex = 41;
+            this.btnScanBarcode.Tag = "Scan Barcode";
+            this.btnScanBarcode.UseSelectable = true;
+            this.btnScanBarcode.Click += new System.EventHandler(this.btnScanBarcode_Click);
             // 
             // btnPrintPreview
             // 
@@ -153,6 +187,7 @@
             this.BarcodeImage.Size = new System.Drawing.Size(157, 67);
             this.BarcodeImage.TabIndex = 40;
             this.BarcodeImage.TabStop = false;
+            this.BarcodeImage.Visible = false;
             // 
             // txtUnit
             // 
@@ -284,6 +319,7 @@
             this.txtBarcode.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtBarcode.CustomButton.UseSelectable = true;
             this.txtBarcode.CustomButton.Visible = false;
+            this.txtBarcode.Enabled = false;
             this.txtBarcode.Lines = new string[0];
             this.txtBarcode.Location = new System.Drawing.Point(88, 53);
             this.txtBarcode.MaxLength = 32767;
@@ -314,6 +350,14 @@
             // printDocument1
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // labelEAN13
+            // 
+            this.labelEAN13.Location = new System.Drawing.Point(320, 60);
+            this.labelEAN13.Name = "labelEAN13";
+            this.labelEAN13.Size = new System.Drawing.Size(132, 46);
+            this.labelEAN13.TabIndex = 43;
+            this.labelEAN13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmPriceItem
             // 
@@ -361,5 +405,8 @@
         private MetroFramework.Controls.MetroButton btnPrintPreview;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.TextBox txtPrice;
+        private MetroFramework.Controls.MetroButton btnGenerateBarcode;
+        private MetroFramework.Controls.MetroButton btnScanBarcode;
+        private System.Windows.Forms.Label labelEAN13;
     }
 }

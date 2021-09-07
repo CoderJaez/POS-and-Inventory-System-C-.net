@@ -112,7 +112,7 @@ namespace Jaezer_POS_and_Inventory.View.Forms
 
         private void tbnSave_Click(object sender, EventArgs e)
         {
-            if(txtDiscount.Text != "")
+            if(txtDiscount.Text != "" && ProdSaleDG.RowCount > 0)
             {
                 string dFrom = dateEFrm.Value.ToString("yyyy-MM-dd");
                 string dTo = dateETo.Value.ToString("yyyy-MM-dd");

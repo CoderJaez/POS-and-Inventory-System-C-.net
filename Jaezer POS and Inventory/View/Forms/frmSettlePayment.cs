@@ -29,7 +29,7 @@ namespace Jaezer_POS_and_Inventory.View.Forms
         private string StringToPrnt;
         float leading = 4;
         Font bft = new Font("Arial Narrow", 10);
-        Font hft = new Font("Times New Roman  BOLD", 12);
+        Font hft = new Font("Times New Roman  BOLD", 10);
         float startX = 0;
         float startY = 0;
         float lineheight12 = 0;
@@ -376,7 +376,8 @@ namespace Jaezer_POS_and_Inventory.View.Forms
             this.Hide();
             this.Close();
             load.Close();
-            PrintReciept();
+            if(Properties.Settings.Default.enableRP)
+                PrintReciept();
             frmChange frm = new frmChange(lblChange.Text);
             frm.ShowDialog();
         }

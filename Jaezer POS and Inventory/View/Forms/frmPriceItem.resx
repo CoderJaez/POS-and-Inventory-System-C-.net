@@ -126,6 +126,34 @@
         ty0PifIQCu8eEua7p/wjQlgBZkLm+QdXxC0AAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="btnGenerateBarcode.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAiZJREFUWEft
+        VbtKA1EQXUTEV2kpCMGPSCEhjY0igrCEZDckEskH+AWpRFDsBRtbf8EPsFFEwcoyjfioFE2RRM+5mRsn
+        2V1lN1uI5MCwd+acmXuyjxsnbRQKhU3f968QLUSH4XneR6lUuiyXyxsiSx/1en0Wm9xgs8+fAppraqUt
+        HbiuO4/hz0ObtREvErwL2sRTqiYw9E5t0MZt3280GpNCO1yjdgBOG7kVejTwmauhnWq1mhUqgGKxuEKN
+        1VcqlXWhHAe3JYfiOYNrnesQeR98pqibgdhgT8qRkDth9Oi9lLIZ5CrC1bkOkfcBXUu4NtKJXjUafBzQ
+        2rvwIeXkBlDrso5f9iilX4HZT+zBtSuleAbwPc+ZJsDW4xiA3n4xyQxgs2XTBEBnH0FHv/nDgG6rVqst
+        5fP5aWql513o2AaKpgmArv8SIg6lHAB0R+Df0Xtq9VhfCB3bwAkOnymuebwqPvIzFAMDs1BbEzq2gTPw
+        ddMIIL9SmsBBREA/bOBaqB7iGsD6HndhhjmPVeTmzVZhjmLyRIiBN8Si0IkM8Bkem2Yg6s9IaPbsIG8i
+        HuTa5ByhkxmwuYb+Ow7jIzGKAVx9HMMLXCfGKAYkf8B1234dYcAZwGPYx+yclL6RggGreUW+iv4MwpPI
+        sEaOGs5m3wBYtEO41rkOan8xEOgPy9k3gJ8adFA7NjA28D8NgMhykAzL6lwHtbjuRuWM4f6wnH1jjPEH
+        4DhfG7zmUPDRm/gAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnScanBarcode.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAZ5JREFUOE+N
+        kztLA0EURjfiCy0UEQVRkNQWYiOiRUQQQhoLV/LYhEViKlOI/0G0ELGxSdDOQouANtYWIqJYWAhioYkE
+        fEfsfCSeeRAHMSQXDnfn3u+77M7MWtXCcZyhcDhsk6cikcgoz95EItGg2/9HMBjsR7iK6QIeMJbgk+dX
+        cp5eFta1XIXf72+imYQTyEERhLESx9qqgumHFO/hzRBVhDc40lYVFFLxeLw7FAqNwCLrDJwivvlrhiKa
+        FW1VQTFJcUwvyxGLxWaFwTALCgz3aokKir18xh55jk3s02UrGo0OIy4Y5hK6O+pdWvIbtm03Ih5HtARb
+        CNPkXXgGc28eGTCgbdUDwwTDbsl58hf5mwGubleNOkw5WMa4DS8gTmFHdvX57yOYIU+S0zDP57RJAcE6
+        AynYQPMuBsC5bHItW1g8MXGB7MAZrHEinVKgwkP/krq5kdeyU8sAxAFqeSgPgKzP56uvaQDrAzDNYg+u
+        dFseX4frus1iP8jt7HArZY/qyls6iClrDPjgrTZ1u7bgcvVgnGaY+LUD6pe2rB9gdh5MCI+UNwAAAABJ
+        RU5ErkJggg==
+</value>
+  </data>
   <metadata name="printDocument1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>

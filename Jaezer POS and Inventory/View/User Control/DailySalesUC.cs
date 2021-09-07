@@ -19,6 +19,13 @@ namespace Jaezer_POS_and_Inventory.View.User_Control
         UserModel uModel = new UserModel();
         CompanyProfileModel pmodel = new CompanyProfileModel();
         private frmMain main;
+
+        private int limit = 50;
+        private int totalRows = 0;
+        private int filteredRows = 0;
+        private int page = 1;
+        private int start = 0;
+
         public DailySalesUC(frmMain _main)
         {
             InitializeComponent();
@@ -50,7 +57,7 @@ namespace Jaezer_POS_and_Inventory.View.User_Control
             decimal TotalProfit = 0;
             int TotalQty = 0;
             SoldItemsDG.Rows.Clear();
-            foreach (var item in stModel.SoldItems(dFrom, dTo, cbUserID.SelectedValue.ToString(),""))
+            foreach (var item in stModel.SoldItems(dFrom, dTo, cbUserID.SelectedValue.ToString(),"", start, limit,false))
             {
                 item.ProductName += item.IsSale ? " SALE" : "";
                 SoldItemsDG.Rows.Add(item.CartID, item.Invoice, item.ProductName, item.Price,item.SPrice, item.Qty, item.UnitCode, item.Discount, item.Total,item.Total - (item.Price * item.Qty),item.SDate,item.User);
@@ -59,9 +66,20 @@ namespace Jaezer_POS_and_Inventory.View.User_Control
                 TotalSales += item.Total;
                 TotalProfit += item.Total - (item.Price * item.Qty);
             }
-
+            totalRows = stModel.TotalRows;
             SoldItemsDG.Rows.Add("","","","","TOTAL",TotalQty,"",TotalDiscount,TotalSales,TotalProfit);
             SoldItemsDG.Rows[SoldItemsDG.RowCount - 1].DefaultCellStyle.BackColor = Color.AliceBlue;
+            pageLabel.Text = $"{page}/{Math.Round((double)totalRows/(double)limit)}";
+            if (totalRows - start < limit)
+            {
+                btnNext.Enabled = false;
+                labelEntries.Text = $"Showing {start + 1} to {totalRows} of {totalRows} entries";
+            }
+            else
+            {
+                labelEntries.Text = $"Showing {start + 1} to {start + limit} of {totalRows} entries";
+                btnNext.Enabled = true;
+            }
         }
 
         private void DailySalesUC_Load(object sender, EventArgs e)
@@ -137,6 +155,76 @@ namespace Jaezer_POS_and_Inventory.View.User_Control
 
                 }
             }
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            start += limit;
+            page += 1;
+
+            if ((totalRows - start) <= limit)
+            {
+                btnNext.Enabled = false;
+                btnLastPage.Enabled = false;
+            }
+            btnPrev.Enabled = true;
+            btnFirstPage.Enabled = true;
+            SoldItemList();
+        }
+
+        private void btnPrev_Click(object sender, EventArgs e)
+        {
+            start -= limit;
+            page -= 1;
+            if (start <= 0)
+            {
+                start = 0;
+                page = 1;
+                btnPrev.Enabled = false;
+                btnFirstPage.Enabled = false;
+            }
+            btnLastPage.Enabled = true;
+            SoldItemList();
+        }
+
+        private void btnLastPage_Click(object sender, EventArgs e)
+        {
+            page = totalRows / limit;
+            start = page * limit;
+            SoldItemList();
+            btnPrev.Enabled = true;
+            btnLastPage.Enabled = false;
+            btnFirstPage.Enabled = true;
+        }
+
+        private void btnFirstPage_Click(object sender, EventArgs e)
+        {
+            start = 0;
+            page = 1;
+            SoldItemList();
+            btnFirstPage.Enabled = false;
+            btnLastPage.Enabled = true;
+            btnPrev.Enabled = false;
+
+        }
+
+        private void cbPerPage_SelectedValueChanged(object sender, EventArgs e)
+        {
+            limit = cbPerPage.Text == "" ? 50 : int.Parse(cbPerPage.Text);
+            start = 0;
+            if (totalRows <= limit)
+            {
+                btnFirstPage.Enabled = false;
+                btnLastPage.Enabled = false;
+                btnPrev.Enabled = false;
+                btnNext.Enabled = false;
+            }
+            else
+            {
+                btnFirstPage.Enabled = true;
+                btnLastPage.Enabled = true;
+            }
+            SoldItemList();
         }
     }
 }

@@ -10,6 +10,22 @@ namespace Jaezer_POS_and_Inventory.Model
 {
     public class InventoryModel : StockinModel
     {
+        private int totalRows;
+
+        public int TotalRows
+        {
+            get { return totalRows; }
+            set { totalRows = value; }
+        }
+
+        private int filteredRows;
+
+        public int FilteredRows
+        {
+            get { return filteredRows; }
+            set { filteredRows = value; }
+        }
+
         public List<CancelOrder> GetCancelledOrders(string dateFrom, string dateTo)
         {
             var list = new List<CancelOrder>();
@@ -57,7 +73,7 @@ namespace Jaezer_POS_and_Inventory.Model
                 {
                     using (cmd = new MySqlCommand("",con))
                     {
-                        cmd.CommandText = $@"SELECT prodID, productName,hasExpiry, onhand, reorder
+                        cmd.CommandText = $@"SELECT prodID, productName,hasExpiry,qty, onhand, reorder
                                             from inventory where onhand <= reorder and productName like @productName";
                         cmd.Parameters.AddWithValue("@productName", $"%{search}%");
                         con.Open();
@@ -71,7 +87,8 @@ namespace Jaezer_POS_and_Inventory.Model
                                     ProductName = rd.GetString("productName"),
                                     Onhand = rd.GetInt32("onhand"),
                                     ReOrderLevel = rd.GetInt32("reorder"),
-                                    HasExpiry = rd.GetBoolean("hasExpiry")
+                                    HasExpiry = rd.GetBoolean("hasExpiry"),
+                                    Qty = rd.GetInt32("qty")
                                 });
                             }
                         }
@@ -123,20 +140,61 @@ namespace Jaezer_POS_and_Inventory.Model
             }
             return summ;
         }
-        public StockIn GetProductInventory(string search)
+
+        public StockIn GetProductInventory()
         {
             var list = new StockIn();
             try
             {
                 using (con = new MySqlConnection(ConnString))
                 {
-                    using (cmd = new MySqlCommand("", con))
+                    using (cmd = new MySqlCommand("select * from inventory", con))
                     {
                         con.Open();
-                        cmd.CommandText = "select * from inventory where productName LIKE @ProductName or category LIKE @Category or brand LIKE @Brand";
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                var obj = new StockIn();
+                                obj.ProductID = reader.GetInt32("prodID");
+                                obj.ProductName = reader.GetString("productName");
+                                obj.Brand = reader.GetString("brand");
+                                obj.Category = reader.GetString("category");
+                                obj.Onhand = reader.GetInt32("onhand");
+                                obj.UnitCode = reader.GetString("baseUnit");
+                                obj.ReOrderLevel = reader.GetDouble("reorder");
+                                list.ProductList.Add(obj);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+
+            }
+            return list;
+        }
+        public StockIn GetProductInventory(string search, int start = 0, int limit = 50)
+        {
+            var list = new StockIn();
+            try
+            {
+                using (con = new MySqlConnection(ConnString))
+                {
+                    con.Open();
+                    MySqlTransaction tr = con.BeginTransaction();
+                    using (cmd = new MySqlCommand("", con))
+                    {
+                        cmd.CommandText = "select * from inventory where productName LIKE @ProductName or category LIKE @Category or brand LIKE @Brand LIMIT @Start, @Limit";
                         cmd.Parameters.AddWithValue("@ProductName", $"%{search}%");
                         cmd.Parameters.AddWithValue("@Category", $"%{search}%");
                         cmd.Parameters.AddWithValue("@Brand", $"%{search}%");
+                        cmd.Parameters.AddWithValue("@Start", start);
+                        cmd.Parameters.AddWithValue("@Limit", limit);
+
                         using (MySqlDataReader reader = cmd.ExecuteReader())
                         {
                             while (reader.Read())
@@ -154,6 +212,31 @@ namespace Jaezer_POS_and_Inventory.Model
                         }
 
                     }
+
+                    using (cmd = new MySqlCommand("SELECT COUNT(*) AS filteredRows from inventory where productName LIKE @ProductName or category LIKE @Category or brand LIKE @Brand", con))
+                    {
+                        cmd.Parameters.AddWithValue("@ProductName", $"%{search}%");
+                        cmd.Parameters.AddWithValue("@Category", $"%{search}%");
+                        cmd.Parameters.AddWithValue("@Brand", $"%{search}%");
+
+                        using (MySqlDataReader rd = cmd.ExecuteReader())
+                        {
+                            if(rd.Read())
+                                filteredRows = rd.GetInt32("filteredRows");
+                        }
+                    }
+
+                    using (cmd = new MySqlCommand("SELECT COUNT(*) AS totalRows from inventory", con))
+                    {
+
+                        using (MySqlDataReader rd = cmd.ExecuteReader())
+                        {
+                            if (rd.Read())
+                                totalRows = rd.GetInt32("totalRows");
+                        }
+                    }
+
+                    tr.Commit();
                 }
             }
             catch (Exception ex)

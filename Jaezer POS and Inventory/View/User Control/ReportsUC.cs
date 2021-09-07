@@ -44,7 +44,7 @@ namespace Jaezer_POS_and_Inventory.View.User_Control
         {
             InventoryDG.Rows.Clear();
             int i = 0;
-            foreach (var item in model.GetProductInventory("").ProductList)
+            foreach (var item in model.GetProductInventory().ProductList)
             {
                 InventoryDG.Rows.Add(i + 1, item.ProductName, item.Brand, item.Category, item.ReOrderLevel, item.Onhand, item.UnitCode);
                 if (item.ReOrderLevel >= item.Onhand)

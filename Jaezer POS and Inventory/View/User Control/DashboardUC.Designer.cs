@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardUC));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
@@ -40,46 +41,45 @@
             System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardUC));
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblExpiry2 = new System.Windows.Forms.Label();
             this.lblExpiry1 = new System.Windows.Forms.Label();
+            this.pbExpiry = new System.Windows.Forms.PictureBox();
             this.lblExpItems = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.lblCriticalItems = new System.Windows.Forms.Label();
+            this.pbCritItem = new System.Windows.Forms.PictureBox();
             this.lblCritItems = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.pbOnhand = new System.Windows.Forms.PictureBox();
             this.lblOnhand = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.pbProduct = new System.Windows.Forms.PictureBox();
             this.lblProdItems = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblDailySales = new System.Windows.Forms.Label();
             this.chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.pbCritItem = new System.Windows.Forms.PictureBox();
-            this.pbOnhand = new System.Windows.Forms.PictureBox();
-            this.pbProduct = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pbExpiry = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbExpiry)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCritItem)).BeginInit();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbOnhand)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbExpiry)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -121,6 +121,17 @@
             this.lblExpiry1.Size = new System.Drawing.Size(99, 19);
             this.lblExpiry1.TabIndex = 2;
             this.lblExpiry1.Text = "Expiry Items";
+            // 
+            // pbExpiry
+            // 
+            this.pbExpiry.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbExpiry.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pbExpiry.Image = ((System.Drawing.Image)(resources.GetObject("pbExpiry.Image")));
+            this.pbExpiry.Location = new System.Drawing.Point(3, 3);
+            this.pbExpiry.Name = "pbExpiry";
+            this.pbExpiry.Size = new System.Drawing.Size(62, 93);
+            this.pbExpiry.TabIndex = 1;
+            this.pbExpiry.TabStop = false;
             // 
             // lblExpItems
             // 
@@ -195,6 +206,17 @@
             this.lblCriticalItems.TabIndex = 2;
             this.lblCriticalItems.Text = "Critical Items";
             // 
+            // pbCritItem
+            // 
+            this.pbCritItem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbCritItem.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pbCritItem.Image = ((System.Drawing.Image)(resources.GetObject("pbCritItem.Image")));
+            this.pbCritItem.Location = new System.Drawing.Point(3, 3);
+            this.pbCritItem.Name = "pbCritItem";
+            this.pbCritItem.Size = new System.Drawing.Size(62, 93);
+            this.pbCritItem.TabIndex = 1;
+            this.pbCritItem.TabStop = false;
+            // 
             // lblCritItems
             // 
             this.lblCritItems.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -247,6 +269,16 @@
             this.label11.TabIndex = 2;
             this.label11.Text = "Onhand";
             // 
+            // pbOnhand
+            // 
+            this.pbOnhand.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pbOnhand.Image = ((System.Drawing.Image)(resources.GetObject("pbOnhand.Image")));
+            this.pbOnhand.Location = new System.Drawing.Point(3, 3);
+            this.pbOnhand.Name = "pbOnhand";
+            this.pbOnhand.Size = new System.Drawing.Size(62, 93);
+            this.pbOnhand.TabIndex = 1;
+            this.pbOnhand.TabStop = false;
+            // 
             // lblOnhand
             // 
             this.lblOnhand.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -295,6 +327,16 @@
             this.label8.Size = new System.Drawing.Size(74, 19);
             this.label8.TabIndex = 2;
             this.label8.Text = "Products";
+            // 
+            // pbProduct
+            // 
+            this.pbProduct.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pbProduct.Image = ((System.Drawing.Image)(resources.GetObject("pbProduct.Image")));
+            this.pbProduct.Location = new System.Drawing.Point(3, 3);
+            this.pbProduct.Name = "pbProduct";
+            this.pbProduct.Size = new System.Drawing.Size(62, 93);
+            this.pbProduct.TabIndex = 1;
+            this.pbProduct.TabStop = false;
             // 
             // lblProdItems
             // 
@@ -347,6 +389,16 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "Daily Sales";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(48, 93);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
             // lblDailySales
             // 
             this.lblDailySales.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -376,6 +428,7 @@
             this.chart.Name = "chart";
             this.chart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series1.ChartArea = "YearChart";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
             series1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             series1.IsValueShownAsLabel = true;
             series1.LabelToolTip = "#VAL{C2}";
@@ -429,58 +482,6 @@
             this.chart.Titles.Add(title3);
             this.chart.Titles.Add(title4);
             // 
-            // pbCritItem
-            // 
-            this.pbCritItem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbCritItem.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pbCritItem.Image = ((System.Drawing.Image)(resources.GetObject("pbCritItem.Image")));
-            this.pbCritItem.Location = new System.Drawing.Point(3, 3);
-            this.pbCritItem.Name = "pbCritItem";
-            this.pbCritItem.Size = new System.Drawing.Size(62, 93);
-            this.pbCritItem.TabIndex = 1;
-            this.pbCritItem.TabStop = false;
-            // 
-            // pbOnhand
-            // 
-            this.pbOnhand.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pbOnhand.Image = ((System.Drawing.Image)(resources.GetObject("pbOnhand.Image")));
-            this.pbOnhand.Location = new System.Drawing.Point(3, 3);
-            this.pbOnhand.Name = "pbOnhand";
-            this.pbOnhand.Size = new System.Drawing.Size(62, 93);
-            this.pbOnhand.TabIndex = 1;
-            this.pbOnhand.TabStop = false;
-            // 
-            // pbProduct
-            // 
-            this.pbProduct.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pbProduct.Image = ((System.Drawing.Image)(resources.GetObject("pbProduct.Image")));
-            this.pbProduct.Location = new System.Drawing.Point(3, 3);
-            this.pbProduct.Name = "pbProduct";
-            this.pbProduct.Size = new System.Drawing.Size(62, 93);
-            this.pbProduct.TabIndex = 1;
-            this.pbProduct.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 93);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pbExpiry
-            // 
-            this.pbExpiry.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbExpiry.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pbExpiry.Image = ((System.Drawing.Image)(resources.GetObject("pbExpiry.Image")));
-            this.pbExpiry.Location = new System.Drawing.Point(3, 3);
-            this.pbExpiry.Name = "pbExpiry";
-            this.pbExpiry.Size = new System.Drawing.Size(62, 93);
-            this.pbExpiry.TabIndex = 1;
-            this.pbExpiry.TabStop = false;
-            // 
             // DashboardUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -496,21 +497,21 @@
             this.Load += new System.EventHandler(this.DashboardUC_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbExpiry)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCritItem)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbOnhand)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCritItem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbOnhand)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbExpiry)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart)).EndInit();
             this.ResumeLayout(false);
 
         }

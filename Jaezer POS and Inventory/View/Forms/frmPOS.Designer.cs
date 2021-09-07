@@ -89,6 +89,7 @@
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.cbPrintReciept = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.MainPanel.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -614,6 +615,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(174)))));
+            this.panel2.Controls.Add(this.cbPrintReciept);
             this.panel2.Controls.Add(this.btnClose);
             this.panel2.Controls.Add(this.btnChangePass);
             this.panel2.Controls.Add(this.btnSales);
@@ -780,6 +782,19 @@
             // 
             this.printDialog1.UseEXDialog = true;
             // 
+            // cbPrintReciept
+            // 
+            this.cbPrintReciept.AutoSize = true;
+            this.cbPrintReciept.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.cbPrintReciept.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cbPrintReciept.Location = new System.Drawing.Point(6, 506);
+            this.cbPrintReciept.Name = "cbPrintReciept";
+            this.cbPrintReciept.Size = new System.Drawing.Size(253, 21);
+            this.cbPrintReciept.TabIndex = 8;
+            this.cbPrintReciept.Text = "Reciept Printer";
+            this.cbPrintReciept.UseVisualStyleBackColor = true;
+            this.cbPrintReciept.CheckedChanged += new System.EventHandler(this.cbPrintReciept_CheckedChanged);
+            // 
             // frmPOS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -807,6 +822,7 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -868,5 +884,6 @@
         private System.Windows.Forms.DataGridViewImageColumn sub;
         private System.Windows.Forms.DataGridViewImageColumn add;
         private System.Windows.Forms.DataGridViewImageColumn delete;
+        private System.Windows.Forms.CheckBox cbPrintReciept;
     }
 }

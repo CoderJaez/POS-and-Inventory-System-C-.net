@@ -31,6 +31,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProductListSale));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -38,9 +41,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProductListSale));
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtDiscount = new System.Windows.Forms.TextBox();
             this.tbnSave = new System.Windows.Forms.Button();
@@ -50,6 +50,13 @@
             this.dateETo = new System.Windows.Forms.DateTimePicker();
             this.dateEFrm = new System.Windows.Forms.DateTimePicker();
             this.ProdSaleDG = new System.Windows.Forms.DataGridView();
+            this.prID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.n = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PSName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Discount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -62,13 +69,6 @@
             this.add = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.prID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.n = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PSName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Discount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProdSaleDG)).BeginInit();
             this.panel2.SuspendLayout();
@@ -160,7 +160,7 @@
             this.dateETo.Name = "dateETo";
             this.dateETo.Size = new System.Drawing.Size(211, 21);
             this.dateETo.TabIndex = 21;
-            this.dateETo.Value = new System.DateTime(2020, 11, 10, 0, 0, 0, 0);
+            this.dateETo.Value = new System.DateTime(2021, 5, 5, 0, 0, 0, 0);
             // 
             // dateEFrm
             // 
@@ -169,7 +169,7 @@
             this.dateEFrm.Name = "dateEFrm";
             this.dateEFrm.Size = new System.Drawing.Size(211, 21);
             this.dateEFrm.TabIndex = 22;
-            this.dateEFrm.Value = new System.DateTime(2020, 11, 10, 2, 12, 33, 0);
+            this.dateEFrm.Value = new System.DateTime(2021, 5, 5, 0, 0, 0, 0);
             // 
             // ProdSaleDG
             // 
@@ -225,6 +225,64 @@
             this.ProdSaleDG.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ProdSaleDG.Size = new System.Drawing.Size(441, 347);
             this.ProdSaleDG.TabIndex = 18;
+            // 
+            // prID
+            // 
+            this.prID.HeaderText = "";
+            this.prID.Name = "prID";
+            this.prID.ReadOnly = true;
+            this.prID.Visible = false;
+            // 
+            // n
+            // 
+            this.n.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.n.HeaderText = "";
+            this.n.Name = "n";
+            this.n.ReadOnly = true;
+            this.n.Width = 17;
+            // 
+            // PSName
+            // 
+            this.PSName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.PSName.DefaultCellStyle = dataGridViewCellStyle2;
+            this.PSName.HeaderText = "Description";
+            this.PSName.Name = "PSName";
+            this.PSName.ReadOnly = true;
+            // 
+            // UPrice
+            // 
+            this.UPrice.HeaderText = "";
+            this.UPrice.Name = "UPrice";
+            this.UPrice.ReadOnly = true;
+            this.UPrice.Visible = false;
+            // 
+            // SPrice
+            // 
+            this.SPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.SPrice.HeaderText = "Discounted Price";
+            this.SPrice.Name = "SPrice";
+            this.SPrice.ReadOnly = true;
+            this.SPrice.Width = 139;
+            // 
+            // Discount
+            // 
+            this.Discount.HeaderText = "Less";
+            this.Discount.Name = "Discount";
+            this.Discount.ReadOnly = true;
+            // 
+            // delete
+            // 
+            this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle3.NullValue")));
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(5);
+            this.delete.DefaultCellStyle = dataGridViewCellStyle3;
+            this.delete.HeaderText = "";
+            this.delete.Image = global::Jaezer_POS_and_Inventory.Properties.Resources.icons8_remove_16;
+            this.delete.Name = "delete";
+            this.delete.ReadOnly = true;
+            this.delete.Width = 5;
             // 
             // panel2
             // 
@@ -393,64 +451,6 @@
             this.dataGridViewImageColumn1.HeaderText = "";
             this.dataGridViewImageColumn1.Image = global::Jaezer_POS_and_Inventory.Properties.Resources.icons8_left_2_16;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            // 
-            // prID
-            // 
-            this.prID.HeaderText = "";
-            this.prID.Name = "prID";
-            this.prID.ReadOnly = true;
-            this.prID.Visible = false;
-            // 
-            // n
-            // 
-            this.n.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.n.HeaderText = "";
-            this.n.Name = "n";
-            this.n.ReadOnly = true;
-            this.n.Width = 17;
-            // 
-            // PSName
-            // 
-            this.PSName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.PSName.DefaultCellStyle = dataGridViewCellStyle2;
-            this.PSName.HeaderText = "Description";
-            this.PSName.Name = "PSName";
-            this.PSName.ReadOnly = true;
-            // 
-            // UPrice
-            // 
-            this.UPrice.HeaderText = "";
-            this.UPrice.Name = "UPrice";
-            this.UPrice.ReadOnly = true;
-            this.UPrice.Visible = false;
-            // 
-            // SPrice
-            // 
-            this.SPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.SPrice.HeaderText = "Discounted Price";
-            this.SPrice.Name = "SPrice";
-            this.SPrice.ReadOnly = true;
-            this.SPrice.Width = 139;
-            // 
-            // Discount
-            // 
-            this.Discount.HeaderText = "Less";
-            this.Discount.Name = "Discount";
-            this.Discount.ReadOnly = true;
-            // 
-            // delete
-            // 
-            this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle3.NullValue")));
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(5);
-            this.delete.DefaultCellStyle = dataGridViewCellStyle3;
-            this.delete.HeaderText = "";
-            this.delete.Image = global::Jaezer_POS_and_Inventory.Properties.Resources.icons8_remove_16;
-            this.delete.Name = "delete";
-            this.delete.ReadOnly = true;
-            this.delete.Width = 5;
             // 
             // frmProductListSale
             // 

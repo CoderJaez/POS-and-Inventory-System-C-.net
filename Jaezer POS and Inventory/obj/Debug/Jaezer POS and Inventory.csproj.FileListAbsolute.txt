@@ -267,7 +267,6 @@ D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inve
 D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\Zen.Barcode.Core.dll
 D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\Dapper.xml
 D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\FluentValidation.xml
-D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.csprojResolveAssemblyReference.cache
 D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.Properties.Resources.resources
 D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmAddress.resources
 D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmAdminAccess.resources
@@ -319,3 +318,4 @@ D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inve
 D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\RdlCompile.compiled
 D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmExpiryItems.resources
 D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmCriticalItems.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.csprojResolveAssemblyReference.cache

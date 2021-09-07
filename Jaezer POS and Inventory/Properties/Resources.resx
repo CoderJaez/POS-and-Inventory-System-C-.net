@@ -118,26 +118,29 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="icons8_left_2_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_left_2_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_checked_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_checked_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_account_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_account_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8_pricing_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_pricing_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AkiNi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AkiNi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_edit_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_edit_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_user_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_user_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_remove_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_remove_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_curved_arrow_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_curved_arrow_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icons8_delete_file_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_delete_file_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_buy_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_buy_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="add_shopping_cart_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add_shopping_cart_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,17 +157,17 @@
   <data name="icons8_expand_arrow_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_expand_arrow_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_checked_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_checked_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_user_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_user_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_toggle_off_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_toggle_off_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_buy_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_buy_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_password_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_password_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_left_2_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_left_2_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_curved_arrow_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_curved_arrow_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_eye_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_eye_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,7 +178,10 @@
   <data name="icons8_minus_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_minus_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_pricing_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_pricing_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_toggle_off_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_toggle_off_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AkiNi (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AkiNi (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
