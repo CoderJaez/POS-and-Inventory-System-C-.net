@@ -349,15 +349,16 @@ namespace Jaezer_POS_and_Inventory.View.Forms
 
         private void SearchTxt_TextChanged(object sender, EventArgs e)
         {
-           if(SearchTxt.Text != "")
+           if(SearchTxt.Text != "" && SearchTxt.Text.Length >= 13)
             {
+                SearchTxt.Text = SearchTxt.Text.Substring(0, 12);
                 var model = new InventoryModel();
                 var obj = model.getProduct(SearchTxt.Text);
                 if (obj.ProductName != null)
                 {
                     AddToCart(obj);
-                    SearchTxt.Text = "";
-                } 
+                }
+                SearchTxt.Text = "";
             }
         }
 

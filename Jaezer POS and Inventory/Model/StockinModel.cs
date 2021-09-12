@@ -223,44 +223,6 @@ namespace Jaezer_POS_and_Inventory.Model
 
             return list;
         }
-        //public bool insert(StockIn list)
-        //{
-        //    try
-        //    {
-        //        using (con = new MySqlConnection(ConnString))
-        //        {
-        //            using (cmd = new MySqlCommand("",con))
-        //            {
-        //                query = "insert into tbl_stockin (prodID, supplierID, referenceNo, qty, onhand, dateArrival, dateExpiry, dateStockin,userID) values ";
-        //                int i = 0;
-        //                foreach (var item in list.ProductList)
-        //                {
-        //                    query += $"(@ProdID_{i}, @SupplierID_{i}, @ReferenceNo_{i}, @Qty_{i}, @Onhand_{i}, @DateArrival_{i}, @DateExpiry_{i}, @DateStockin_{i}, @StockBy_{i}),";
-        //                    cmd.Parameters.AddWithValue($"@ProdID_{i}",item.ProductID);
-        //                    cmd.Parameters.AddWithValue($"@SupplierID_{i}",item.SupplierID);
-        //                    cmd.Parameters.AddWithValue($"@ReferenceNo_{i}",item.ReferenceNo);
-        //                    cmd.Parameters.AddWithValue($"@Qty_{i}",item.Qty);
-        //                    cmd.Parameters.AddWithValue($"@Onhand_{i}",item.Onhand);
-        //                    cmd.Parameters.AddWithValue($"@DateArrival_{i}",item.DateArrival);
-        //                    cmd.Parameters.AddWithValue($"@DateExpiry_{i}",item.DateExpiry); 
-        //                    cmd.Parameters.AddWithValue($"@DateStockin_{i}",item.DateStockin);
-        //                    cmd.Parameters.AddWithValue($"@StockBy_{i}", item.UserID);
-        //                    i++;
-        //                }
-        //                query = query.Remove(query.Length - 1, 1);
-        //                con.Open();
-        //                cmd.CommandText = query;
-        //                cmd.ExecuteNonQuery();
-        //                return true;
-        //            }
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message + $"/n {cmd.CommandText}");
-        //        return false;
-        //    }
-        //}
 
         public bool insert(StockIn list)
         {

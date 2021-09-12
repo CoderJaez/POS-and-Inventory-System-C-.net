@@ -221,9 +221,9 @@ namespace Jaezer_POS_and_Inventory.View.Forms
 
         private void txtBarcode_TextChanged(object sender, EventArgs e)
         {
-           if(txtBarcode.Text != "")
+           if(txtBarcode.Text != "" && txtBarcode.Text.Length >=12)
             {
-                //code128();
+                txtBarcode.Text = txtBarcode.Text.Substring(0, 12);
                 ean13();
             }
         }
@@ -239,15 +239,23 @@ namespace Jaezer_POS_and_Inventory.View.Forms
 
         private void btnScanBarcode_Click(object sender, EventArgs e)
         {
-            txtBarcode.Enabled = true;
-            txtBarcode.Focus();
+            barcode.Focus();
         }
 
         private void btnGenerateBarcode_Click(object sender, EventArgs e)
         {
-            //txtBarcode.Text = $"63{obj.ProductID}06013451";
-            txtBarcode.Enabled = true;
-            //ean13();
+            txtBarcode.Text = model.GenerateBarcode();
+        }
+
+        private void txtBarcode_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                 e.Handled = true;
+        }
+
+        private void barcode_TextChanged(object sender, EventArgs e)
+        {
+            txtBarcode.Text = barcode.Text;
         }
 
         private void frmPriceItem_Shown(object sender, EventArgs e)

@@ -9,9 +9,42 @@ using System.Windows.Forms;
 
 namespace Jaezer_POS_and_Inventory.Model
 {
-    class PricingModel:ProductModel
+    class PricingModel : ProductModel
     {
         private PriceItemCollection PriceCollection = new PriceItemCollection();
+      
+
+        public string GenerateBarcode()
+        {
+            string refNo = $"{DateTime.Now.ToString("yyyyMMss")}";
+            try
+            {
+                using (con = new MySqlConnection(ConnString))
+                {
+                    using (cmd = new MySqlCommand("select id from tbl_pricing order by id desc limit 1", con))
+                    {
+                        con.Open();
+                        using (MySqlDataReader rd = cmd.ExecuteReader())
+                        {
+                            if (rd.HasRows)
+                            {
+                                if (rd.Read())//R202010180001
+                                    refNo += (rd.GetInt32("id") + 1).ToString("D4");
+                            }
+                            else
+                                refNo += "0001";
+
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return refNo;
+        }
+
 
         public new bool delete(int id)
         {
@@ -193,6 +226,7 @@ namespace Jaezer_POS_and_Inventory.Model
             RuleFor(barcode => barcode.Barcode)
                 .Cascade(CascadeMode.StopOnFirstFailure)
                 .NotEmpty().WithMessage("({PropertyName}) Field is Required")
+                .Length(12)
                 .Must(HasDuplicate).WithMessage(" The {PropertyName} with value of ({PropertyValue}) is already registered");
 
             RuleFor(price => price.Price)

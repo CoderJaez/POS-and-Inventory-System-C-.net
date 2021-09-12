@@ -39,9 +39,12 @@ namespace Jaezer_POS_and_Inventory.View.Forms
                 {
                     item.ProductName +=  " SALE";
                     price = item.SPrice;
+                    ProdPriceDG.Rows.Add(item.PriceID,item.ProductID,$"{ProdPriceDG.Rows.Count +1}. " ,$"({item.PriceUnit}) {item.ProductName.ToUpper()}", $"{item.Onhand} {item.ProdUnit}" , price, item.Price - item.SPrice, item.PriceUnit, item.PriceQty, item.HasExpiry,item.IsSale);
+                }else
+                {
+                    ProdPriceDG.Rows.Add(item.PriceID, item.ProductID, $"{ProdPriceDG.Rows.Count + 1}. ", $"({item.PriceUnit}) {item.ProductName.ToUpper()}", $"{item.Onhand} {item.ProdUnit}", price, " ", item.PriceUnit, item.PriceQty, item.HasExpiry, item.IsSale);
                 }
 
-                ProdPriceDG.Rows.Add(item.PriceID,item.ProductID,$"{ProdPriceDG.Rows.Count +1}. " ,$"({item.PriceUnit}) {item.ProductName.ToUpper()}", $"{item.Onhand} {item.ProdUnit}" , price, item.Price - item.SPrice, item.PriceUnit, item.PriceQty, item.HasExpiry,item.IsSale);
                 if (item.Onhand <= item.ReOrder)
                     ProdPriceDG.Rows[ProdPriceDG.Rows.Count-1].DefaultCellStyle.BackColor = Color.OrangeRed;
             }

@@ -34,6 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.labelEAN13 = new System.Windows.Forms.Label();
             this.btnGenerateBarcode = new MetroFramework.Controls.MetroButton();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.btnScanBarcode = new MetroFramework.Controls.MetroButton();
@@ -48,10 +49,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cbUnitCode = new MetroFramework.Controls.MetroComboBox();
-            this.txtBarcode = new MetroFramework.Controls.MetroTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.labelEAN13 = new System.Windows.Forms.Label();
+            this.txtBarcode = new System.Windows.Forms.Label();
+            this.barcode = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BarcodeImage)).BeginInit();
@@ -126,11 +127,20 @@
             this.panel2.Controls.Add(this.cbUnitCode);
             this.panel2.Controls.Add(this.txtBarcode);
             this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.barcode);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 33);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(479, 268);
             this.panel2.TabIndex = 28;
+            // 
+            // labelEAN13
+            // 
+            this.labelEAN13.Location = new System.Drawing.Point(320, 60);
+            this.labelEAN13.Name = "labelEAN13";
+            this.labelEAN13.Size = new System.Drawing.Size(132, 46);
+            this.labelEAN13.TabIndex = 43;
+            this.labelEAN13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnGenerateBarcode
             // 
@@ -305,38 +315,6 @@
             this.cbUnitCode.UseSelectable = true;
             this.cbUnitCode.ValueMember = "id";
             // 
-            // txtBarcode
-            // 
-            // 
-            // 
-            // 
-            this.txtBarcode.CustomButton.Image = null;
-            this.txtBarcode.CustomButton.Location = new System.Drawing.Point(175, 1);
-            this.txtBarcode.CustomButton.Name = "";
-            this.txtBarcode.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtBarcode.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtBarcode.CustomButton.TabIndex = 1;
-            this.txtBarcode.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtBarcode.CustomButton.UseSelectable = true;
-            this.txtBarcode.CustomButton.Visible = false;
-            this.txtBarcode.Enabled = false;
-            this.txtBarcode.Lines = new string[0];
-            this.txtBarcode.Location = new System.Drawing.Point(88, 53);
-            this.txtBarcode.MaxLength = 32767;
-            this.txtBarcode.Name = "txtBarcode";
-            this.txtBarcode.PasswordChar = '\0';
-            this.txtBarcode.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtBarcode.SelectedText = "";
-            this.txtBarcode.SelectionLength = 0;
-            this.txtBarcode.SelectionStart = 0;
-            this.txtBarcode.ShortcutsEnabled = true;
-            this.txtBarcode.Size = new System.Drawing.Size(197, 23);
-            this.txtBarcode.TabIndex = 5;
-            this.txtBarcode.UseSelectable = true;
-            this.txtBarcode.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtBarcode.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.txtBarcode.TextChanged += new System.EventHandler(this.txtBarcode_TextChanged);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -351,13 +329,23 @@
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
-            // labelEAN13
+            // txtBarcode
             // 
-            this.labelEAN13.Location = new System.Drawing.Point(320, 60);
-            this.labelEAN13.Name = "labelEAN13";
-            this.labelEAN13.Size = new System.Drawing.Size(132, 46);
-            this.labelEAN13.TabIndex = 43;
-            this.labelEAN13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtBarcode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBarcode.Location = new System.Drawing.Point(88, 53);
+            this.txtBarcode.Name = "txtBarcode";
+            this.txtBarcode.Size = new System.Drawing.Size(197, 27);
+            this.txtBarcode.TabIndex = 28;
+            this.txtBarcode.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtBarcode.TextChanged += new System.EventHandler(this.txtBarcode_TextChanged);
+            // 
+            // barcode
+            // 
+            this.barcode.Location = new System.Drawing.Point(88, 53);
+            this.barcode.Name = "barcode";
+            this.barcode.Size = new System.Drawing.Size(197, 25);
+            this.barcode.TabIndex = 44;
+            this.barcode.TextChanged += new System.EventHandler(this.barcode_TextChanged);
             // 
             // frmPriceItem
             // 
@@ -396,7 +384,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private MetroFramework.Controls.MetroComboBox cbUnitCode;
-        private MetroFramework.Controls.MetroTextBox txtBarcode;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label txtUnit;
         private System.Windows.Forms.Label label8;
@@ -408,5 +395,7 @@
         private MetroFramework.Controls.MetroButton btnGenerateBarcode;
         private MetroFramework.Controls.MetroButton btnScanBarcode;
         private System.Windows.Forms.Label labelEAN13;
+        private System.Windows.Forms.Label txtBarcode;
+        private System.Windows.Forms.TextBox barcode;
     }
 }

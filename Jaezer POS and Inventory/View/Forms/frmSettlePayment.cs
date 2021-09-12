@@ -28,8 +28,8 @@ namespace Jaezer_POS_and_Inventory.View.Forms
         private int prntAreaWidth = 0;
         private string StringToPrnt;
         float leading = 4;
-        Font bft = new Font("Arial Narrow", 10);
-        Font hft = new Font("Times New Roman  BOLD", 10);
+        Font bft = new Font("Arial Narrow", 7);
+        Font hft = new Font("Arial Narrow", 7);
         float startX = 0;
         float startY = 0;
         float lineheight12 = 0;
