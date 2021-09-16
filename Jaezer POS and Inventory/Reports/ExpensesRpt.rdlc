@@ -463,12 +463,16 @@
                       <PaddingBottom>2pt</PaddingBottom>
                     </Style>
                   </Textbox>
+                  <rd:Selected>true</rd:Selected>
                 </CellContents>
               </TablixHeader>
               <TablixMembers>
                 <TablixMember />
               </TablixMembers>
+              <FixedData>true</FixedData>
               <KeepWithGroup>After</KeepWithGroup>
+              <RepeatOnNewPage>true</RepeatOnNewPage>
+              <KeepTogether>true</KeepTogether>
             </TablixMember>
             <TablixMember>
               <Group Name="Date">
@@ -808,10 +812,10 @@
         </Border>
       </Style>
     </PageHeader>
-    <LeftMargin>1in</LeftMargin>
-    <RightMargin>1in</RightMargin>
-    <TopMargin>1in</TopMargin>
-    <BottomMargin>1in</BottomMargin>
+    <LeftMargin>0.5in</LeftMargin>
+    <RightMargin>0.5in</RightMargin>
+    <TopMargin>0.5in</TopMargin>
+    <BottomMargin>0.5in</BottomMargin>
     <Style />
   </Page>
   <AutoRefresh>0</AutoRefresh>

@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using Jaezer_POS_and_Inventory.View.User_Control;
 using Jaezer_POS_and_Inventory.View.Forms;
 using Jaezer_POS_and_Inventory.Model;
+using System.IO;
+
 namespace Jaezer_POS_and_Inventory.View
 {
     public partial class frmMain : Form
@@ -18,12 +20,24 @@ namespace Jaezer_POS_and_Inventory.View
         public User UserInfo;
         public Button _StockEntry;
         public DataTable CriticalItems;
+        private byte[] imageByte;
         public frmMain(User _UserInfo)
         {
             InitializeComponent();
             UserInfo = _UserInfo;
             lblFullname.Text = UserInfo.Fullname;
             lblUserType.Text = UserInfo.UserType;
+            var obj = new CompanyProfileModel().getBusinessProfile();
+            imageByte = obj.logo;
+            try
+            {
+                MemoryStream ms = new MemoryStream(imageByte);
+                CompanyLogo.BackgroundImage = Image.FromStream(ms);
+            }
+            catch (Exception)
+            {
+
+            }
             
         }
 

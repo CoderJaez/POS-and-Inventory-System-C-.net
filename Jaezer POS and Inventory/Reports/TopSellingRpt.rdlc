@@ -9,16 +9,16 @@
               <Width>0.5in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.16667in</Width>
+              <Width>2.61459in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>0.4375in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.42708in</Width>
+              <Width>0.53125in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.96875in</Width>
+              <Width>1.04167in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -58,6 +58,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -354,7 +355,10 @@
         <TablixRowHierarchy>
           <TablixMembers>
             <TablixMember>
+              <FixedData>true</FixedData>
               <KeepWithGroup>After</KeepWithGroup>
+              <RepeatOnNewPage>true</RepeatOnNewPage>
+              <KeepTogether>true</KeepTogether>
             </TablixMember>
             <TablixMember>
               <Group Name="Details" />
@@ -362,9 +366,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>TopSelling</DataSetName>
-        <Top>0.06944in</Top>
+        <Top>0.0868in</Top>
+        <Left>1.04688in</Left>
         <Height>0.5in</Height>
-        <Width>6.5in</Width>
+        <Width>5.125in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -372,13 +377,13 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>0.56944in</Height>
+    <Height>0.67361in</Height>
     <Style />
   </Body>
-  <Width>6.5in</Width>
+  <Width>7.07292in</Width>
   <Page>
     <PageHeader>
-      <Height>1.88194in</Height>
+      <Height>2.0486in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -404,7 +409,7 @@
           </Paragraphs>
           <rd:DefaultName>BusinessName</rd:DefaultName>
           <Top>0.0397in</Top>
-          <Left>1.79688in</Left>
+          <Left>2.56771in</Left>
           <Height>0.27083in</Height>
           <Width>2.90625in</Width>
           <Style>
@@ -437,8 +442,8 @@
           </Paragraphs>
           <rd:DefaultName>Address</rd:DefaultName>
           <Top>0.32442in</Top>
-          <Left>1.79688in</Left>
-          <Height>0.23736in</Height>
+          <Left>2.56771in</Left>
+          <Height>0.62696in</Height>
           <Width>2.90625in</Width>
           <ZIndex>1</ZIndex>
           <Style>
@@ -470,8 +475,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>ContactNo</rd:DefaultName>
-          <Top>0.57567in</Top>
-          <Left>1.79688in</Left>
+          <Top>0.95138in</Top>
+          <Left>2.56771in</Left>
           <Height>0.25in</Height>
           <Width>2.90625in</Width>
           <ZIndex>2</ZIndex>
@@ -490,8 +495,8 @@
           <Value>=Parameters!Logo.Value</Value>
           <MIMEType>image/jpeg</MIMEType>
           <Sizing>FitProportional</Sizing>
-          <Top>0.17289in</Top>
-          <Left>0.88368in</Left>
+          <Top>0.04789in</Top>
+          <Left>1.6988in</Left>
           <Height>0.77778in</Height>
           <Width>0.84375in</Width>
           <ZIndex>3</ZIndex>
@@ -525,9 +530,10 @@
               </Style>
             </Paragraph>
           </Paragraphs>
-          <Top>1.63194in</Top>
+          <Top>1.7986in</Top>
+          <Left>2.97917in</Left>
           <Height>0.25in</Height>
-          <Width>2.54255in</Width>
+          <Width>2.3863in</Width>
           <ZIndex>4</ZIndex>
           <Style>
             <Border>
@@ -560,8 +566,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>DateCreatedAt</rd:DefaultName>
-          <Top>1.11734in</Top>
-          <Left>1.79688in</Left>
+          <Top>1.49305in</Top>
+          <Left>2.56771in</Left>
           <Height>0.25in</Height>
           <Width>2.90625in</Width>
           <ZIndex>5</ZIndex>
@@ -596,8 +602,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox16</rd:DefaultName>
-          <Top>0.86734in</Top>
-          <Left>2.24479in</Left>
+          <Top>1.24305in</Top>
+          <Left>3.01562in</Left>
           <Height>0.25in</Height>
           <Width>2.01042in</Width>
           <ZIndex>6</ZIndex>
@@ -618,8 +624,8 @@
         </Border>
       </Style>
     </PageHeader>
-    <LeftMargin>1in</LeftMargin>
-    <RightMargin>1in</RightMargin>
+    <LeftMargin>0.5in</LeftMargin>
+    <RightMargin>0.5in</RightMargin>
     <TopMargin>0.5in</TopMargin>
     <BottomMargin>0.5in</BottomMargin>
     <Style />

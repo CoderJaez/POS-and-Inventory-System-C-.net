@@ -991,7 +991,10 @@
         <TablixRowHierarchy>
           <TablixMembers>
             <TablixMember>
+              <FixedData>true</FixedData>
               <KeepWithGroup>After</KeepWithGroup>
+              <RepeatOnNewPage>true</RepeatOnNewPage>
+              <KeepTogether>true</KeepTogether>
             </TablixMember>
             <TablixMember>
               <Group Name="Details" />
@@ -1004,7 +1007,7 @@
         <DataSetName>CancelledOrders</DataSetName>
         <Top>0.06944in</Top>
         <Height>0.75in</Height>
-        <Width>8.47396in</Width>
+        <Width>8.47397in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1015,7 +1018,7 @@
     <Height>0.81944in</Height>
     <Style />
   </Body>
-  <Width>8.47396in</Width>
+  <Width>8.47397in</Width>
   <Page>
     <PageHeader>
       <Height>2.0625in</Height>

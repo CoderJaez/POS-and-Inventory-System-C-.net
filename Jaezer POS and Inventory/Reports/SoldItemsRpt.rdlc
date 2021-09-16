@@ -9,10 +9,10 @@
               <Width>0.41452in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.07602in</Width>
+              <Width>1.90935in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>0.85643in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>0.72752in</Width>
@@ -1237,12 +1237,16 @@
                       <PaddingBottom>2pt</PaddingBottom>
                     </Style>
                   </Textbox>
+                  <rd:Selected>true</rd:Selected>
                 </CellContents>
               </TablixHeader>
               <TablixMembers>
                 <TablixMember />
               </TablixMembers>
+              <FixedData>true</FixedData>
               <KeepWithGroup>After</KeepWithGroup>
+              <RepeatOnNewPage>true</RepeatOnNewPage>
+              <KeepTogether>true</KeepTogether>
             </TablixMember>
             <TablixMember>
               <Group Name="SDate">
@@ -1348,8 +1352,9 @@
         </TablixRowHierarchy>
         <DataSetName>SoldItems</DataSetName>
         <Top>0.06944in</Top>
+        <Left>0.077in</Left>
         <Height>1in</Height>
-        <Width>8.50372in</Width>
+        <Width>8.19348in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1357,13 +1362,13 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>2in</Height>
+    <Height>1.06944in</Height>
     <Style />
   </Body>
-  <Width>8.50372in</Width>
+  <Width>8.34747in</Width>
   <Page>
     <PageHeader>
-      <Height>2.11458in</Height>
+      <Height>2.125in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -1423,7 +1428,7 @@
           <rd:DefaultName>Address</rd:DefaultName>
           <Top>0.47478in</Top>
           <Left>2.78286in</Left>
-          <Height>0.37153in</Height>
+          <Height>0.69098in</Height>
           <Width>2.90625in</Width>
           <ZIndex>1</ZIndex>
           <Style>
@@ -1455,7 +1460,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>ContactNo</rd:DefaultName>
-          <Top>0.90187in</Top>
+          <Top>1.16576in</Top>
           <Left>2.78286in</Left>
           <Height>0.25in</Height>
           <Width>2.90625in</Width>
@@ -1484,7 +1489,7 @@
                 </TextRun>
               </TextRuns>
               <Style>
-                <TextAlign>Center</TextAlign>
+                <TextAlign>Left</TextAlign>
               </Style>
             </Paragraph>
           </Paragraphs>
@@ -1497,6 +1502,7 @@
             <Border>
               <Style>None</Style>
             </Border>
+            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -1540,7 +1546,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox16</rd:DefaultName>
-          <Top>1.16576in</Top>
+          <Top>1.42965in</Top>
           <Left>3.23077in</Left>
           <Height>0.25in</Height>
           <Width>2.01042in</Width>
@@ -1572,7 +1578,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>DateCreatedAt</rd:DefaultName>
-          <Top>1.49875in</Top>
+          <Top>1.76264in</Top>
           <Left>2.78286in</Left>
           <Height>0.25in</Height>
           <Width>2.90625in</Width>
@@ -1594,10 +1600,8 @@
         </Border>
       </Style>
     </PageHeader>
-    <LeftMargin>0.5in</LeftMargin>
-    <RightMargin>0.5in</RightMargin>
-    <TopMargin>0.5in</TopMargin>
-    <BottomMargin>0.5in</BottomMargin>
+    <TopMargin>0.25in</TopMargin>
+    <BottomMargin>0.25in</BottomMargin>
     <Style />
   </Page>
   <AutoRefresh>0</AutoRefresh>

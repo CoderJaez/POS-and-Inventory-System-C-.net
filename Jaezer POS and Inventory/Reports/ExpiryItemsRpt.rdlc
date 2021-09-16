@@ -587,7 +587,7 @@
   <Width>7.49961in</Width>
   <Page>
     <PageHeader>
-      <Height>1.68947in</Height>
+      <Height>2.03322in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -647,7 +647,7 @@
           <rd:DefaultName>Address</rd:DefaultName>
           <Top>0.46331in</Top>
           <Left>2.29668in</Left>
-          <Height>0.38542in</Height>
+          <Height>0.66018in</Height>
           <Width>2.90625in</Width>
           <ZIndex>1</ZIndex>
           <Style>
@@ -679,7 +679,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>ContactNo</rd:DefaultName>
-          <Top>0.84873in</Top>
+          <Top>1.12349in</Top>
           <Left>2.29668in</Left>
           <Height>0.25in</Height>
           <Width>2.90625in</Width>
@@ -728,8 +728,7 @@
               </Style>
             </Paragraph>
           </Paragraphs>
-          <Top>1.43947in</Top>
-          <Left>0.16627in</Left>
+          <Top>1.76933in</Top>
           <Height>0.25in</Height>
           <Width>2.60505in</Width>
           <ZIndex>4</ZIndex>
@@ -764,7 +763,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox16</rd:DefaultName>
-          <Top>1.1478in</Top>
+          <Top>1.38738in</Top>
           <Left>2.7446in</Left>
           <Height>0.25in</Height>
           <Width>2.01042in</Width>
@@ -788,8 +787,8 @@
     </PageHeader>
     <LeftMargin>0.5in</LeftMargin>
     <RightMargin>0.5in</RightMargin>
-    <TopMargin>1in</TopMargin>
-    <BottomMargin>1in</BottomMargin>
+    <TopMargin>0.5in</TopMargin>
+    <BottomMargin>0.5in</BottomMargin>
     <Style />
   </Page>
   <AutoRefresh>0</AutoRefresh>
@@ -879,7 +878,11 @@
         </Field>
         <Field Name="Onhand">
           <DataField>Onhand</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Price">
+          <DataField>Price</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="ProductID">
           <DataField>ProductID</DataField>
@@ -891,7 +894,7 @@
         </Field>
         <Field Name="Qty">
           <DataField>Qty</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="ReferenceNo">
           <DataField>ReferenceNo</DataField>
@@ -900,6 +903,10 @@
         <Field Name="Remarks">
           <DataField>Remarks</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="remarksVal">
+          <DataField>remarksVal</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="ReOrderLevel">
           <DataField>ReOrderLevel</DataField>
@@ -921,6 +928,10 @@
           <DataField>SupplierName</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="TotalPurchase">
+          <DataField>TotalPurchase</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
         <Field Name="UnitCode">
           <DataField>UnitCode</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -932,6 +943,10 @@
         <Field Name="UserID">
           <DataField>UserID</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="UserName">
+          <DataField>UserName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Vat">
           <DataField>Vat</DataField>
@@ -970,7 +985,7 @@
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
-    <ReportParameter Name="DateCreateAt">
+    <ReportParameter Name="DateCreatedAt">
       <DataType>String</DataType>
       <Nullable>true</Nullable>
       <AllowBlank>true</AllowBlank>

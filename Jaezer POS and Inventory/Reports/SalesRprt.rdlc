@@ -12,10 +12,10 @@
               <Width>1.09437in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.99083in</Width>
+              <Width>1.64708in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.58453in</Width>
+              <Width>0.73036in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>0.72752in</Width>
@@ -27,13 +27,13 @@
               <Width>0.31024in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.73958in</Width>
+              <Width>0.6875in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>0.58771in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.83333in</Width>
+              <Width>0.80208in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -424,6 +424,7 @@
                               <Value>=RowNumber(Nothing)</Value>
                               <Style>
                                 <FontFamily>Century Gothic</FontFamily>
+                                <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -458,6 +459,7 @@
                               <Value>=Fields!Invoice.Value</Value>
                               <Style>
                                 <FontFamily>Century Gothic</FontFamily>
+                                <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -490,6 +492,7 @@
                               <Value>=Fields!ProductName.Value</Value>
                               <Style>
                                 <FontFamily>Century Gothic</FontFamily>
+                                <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -522,6 +525,7 @@
                               <Value>=Fields!Price.Value</Value>
                               <Style>
                                 <FontFamily>Century Gothic</FontFamily>
+                                <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -554,6 +558,7 @@
                               <Value>=Fields!SPrice.Value</Value>
                               <Style>
                                 <FontFamily>Century Gothic</FontFamily>
+                                <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -588,6 +593,7 @@
                               <Value>=Fields!Qty.Value</Value>
                               <Style>
                                 <FontFamily>Century Gothic</FontFamily>
+                                <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -625,6 +631,7 @@
                               <Value>=Fields!UnitCode.Value</Value>
                               <Style>
                                 <FontFamily>Century Gothic</FontFamily>
+                                <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -660,6 +667,7 @@
                               <Value>=Fields!Discount.Value</Value>
                               <Style>
                                 <FontFamily>Century Gothic</FontFamily>
+                                <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -695,6 +703,7 @@
                               <Value>=Fields!Total.Value</Value>
                               <Style>
                                 <FontFamily>Century Gothic</FontFamily>
+                                <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -729,6 +738,7 @@
                               <Value>=Fields!Profit.Value</Value>
                               <Style>
                                 <FontFamily>Century Gothic</FontFamily>
+                                <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -749,7 +759,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -809,6 +818,7 @@
                               <Value>=Sum(Fields!Qty.Value)</Value>
                               <Style>
                                 <FontFamily>Century Gothic</FontFamily>
+                                <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -846,6 +856,7 @@
                               <Value />
                               <Style>
                                 <FontFamily>Century Gothic</FontFamily>
+                                <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -881,6 +892,7 @@
                               <Value>=Sum(Fields!Discount.Value)</Value>
                               <Style>
                                 <FontFamily>Century Gothic</FontFamily>
+                                <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -916,6 +928,7 @@
                               <Value>=Sum(Fields!Total.Value)</Value>
                               <Style>
                                 <FontFamily>Century Gothic</FontFamily>
+                                <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -950,6 +963,7 @@
                               <Value>=Sum(Fields!Profit.Value)</Value>
                               <Style>
                                 <FontFamily>Century Gothic</FontFamily>
+                                <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -1250,12 +1264,16 @@
                       <PaddingBottom>2pt</PaddingBottom>
                     </Style>
                   </Textbox>
+                  <rd:Selected>true</rd:Selected>
                 </CellContents>
               </TablixHeader>
               <TablixMembers>
                 <TablixMember />
               </TablixMembers>
+              <FixedData>true</FixedData>
               <KeepWithGroup>After</KeepWithGroup>
+              <RepeatOnNewPage>true</RepeatOnNewPage>
+              <KeepTogether>true</KeepTogether>
             </TablixMember>
             <TablixMember>
               <Group Name="SDate">
@@ -1281,6 +1299,7 @@
                             <Value>=Fields!SDate.Value</Value>
                             <Style>
                               <FontFamily>Century Gothic</FontFamily>
+                              <FontSize>9pt</FontSize>
                             </Style>
                           </TextRun>
                         </TextRuns>
@@ -1360,23 +1379,24 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>SalesHistory</DataSetName>
-        <Left>0.04535in</Left>
+        <Left>0.10601in</Left>
         <Height>1.14583in</Height>
-        <Width>8.45971in</Width>
+        <Width>8.17846in</Width>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
+          <FontSize>9pt</FontSize>
         </Style>
       </Tablix>
     </ReportItems>
     <Height>1.14583in</Height>
     <Style />
   </Body>
-  <Width>8.50506in</Width>
+  <Width>8.39048in</Width>
   <Page>
     <PageHeader>
-      <Height>1.95105in</Height>
+      <Height>2.2948in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -1402,7 +1422,7 @@
           </Paragraphs>
           <rd:DefaultName>BusinessName</rd:DefaultName>
           <Top>0.12722in</Top>
-          <Left>2.2546in</Left>
+          <Left>2.79941in</Left>
           <Height>0.34375in</Height>
           <Width>2.90625in</Width>
           <Style>
@@ -1435,7 +1455,7 @@
           </Paragraphs>
           <rd:DefaultName>Address</rd:DefaultName>
           <Top>0.51958in</Top>
-          <Left>2.2546in</Left>
+          <Left>2.79941in</Left>
           <Height>0.38542in</Height>
           <Width>2.90625in</Width>
           <ZIndex>1</ZIndex>
@@ -1469,7 +1489,7 @@
           </Paragraphs>
           <rd:DefaultName>ContactNo</rd:DefaultName>
           <Top>0.94667in</Top>
-          <Left>2.2546in</Left>
+          <Left>2.79941in</Left>
           <Height>0.25in</Height>
           <Width>2.90625in</Width>
           <ZIndex>2</ZIndex>
@@ -1501,7 +1521,7 @@
               </Style>
             </Paragraph>
           </Paragraphs>
-          <Top>1.67327in</Top>
+          <Top>2.0448in</Top>
           <Left>0.04535in</Left>
           <Height>0.25in</Height>
           <Width>2.60505in</Width>
@@ -1522,7 +1542,7 @@
           <MIMEType>image/jpeg</MIMEType>
           <Sizing>FitProportional</Sizing>
           <Top>0.12722in</Top>
-          <Left>1.34141in</Left>
+          <Left>1.91399in</Left>
           <Height>0.77778in</Height>
           <Width>0.84375in</Width>
           <ZIndex>4</ZIndex>
@@ -1554,7 +1574,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox16</rd:DefaultName>
           <Top>1.21056in</Top>
-          <Left>2.73496in</Left>
+          <Left>3.24732in</Left>
           <Height>0.25in</Height>
           <Width>2.01042in</Width>
           <ZIndex>5</ZIndex>
@@ -1575,8 +1595,6 @@
         </Border>
       </Style>
     </PageHeader>
-    <LeftMargin>0.5in</LeftMargin>
-    <RightMargin>0.5in</RightMargin>
     <TopMargin>0.5in</TopMargin>
     <BottomMargin>0.5in</BottomMargin>
     <Style />
