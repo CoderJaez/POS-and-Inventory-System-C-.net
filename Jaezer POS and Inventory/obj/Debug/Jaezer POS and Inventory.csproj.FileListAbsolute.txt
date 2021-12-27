@@ -318,4 +318,33 @@ D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inve
 D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\RdlCompile.compiled
 D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmExpiryItems.resources
 D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmCriticalItems.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\System.dll
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\System.xml
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.exe.manifest
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.application
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.exe.manifest
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.application
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\MySqlBackup.dll
 D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.csprojResolveAssemblyReference.cache
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.BackupDbUC.resources
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\BouncyCastle.Crypto.dll
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\Google.Protobuf.dll
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\K4os.Compression.LZ4.dll
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\K4os.Hash.xxHash.dll
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\System.Buffers.dll
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\System.Memory.dll
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\System.Numerics.Vectors.dll
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\Ubiety.Dns.Core.dll
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\ZstdNet.dll
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\Google.Protobuf.pdb
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\Google.Protobuf.xml
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\K4os.Compression.LZ4.xml
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\K4os.Hash.xxHash.xml
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\MySql.Data.xml
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\System.Buffers.xml
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\System.Memory.xml
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\System.Numerics.Vectors.xml
+D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml

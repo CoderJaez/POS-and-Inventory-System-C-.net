@@ -125,7 +125,7 @@ namespace Jaezer_POS_and_Inventory.View.User_Control
                     if (model.delete(ids))
                     {
                         MessageBox.Show("Selected row deleted successfully", model.AppName);
-                        foreach (var row in rows)
+                        foreach (DataGridViewRow row in rows)
                             ProductDG.Rows.Remove(row);
                         rows.Clear();
                         ids.Clear();

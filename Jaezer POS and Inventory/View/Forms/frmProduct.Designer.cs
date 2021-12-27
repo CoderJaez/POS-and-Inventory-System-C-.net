@@ -55,6 +55,10 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.PriceListDG = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnNewPrice = new System.Windows.Forms.Button();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Barcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Variant = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,10 +66,7 @@
             this.UnitCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnNewPrice = new System.Windows.Forms.Button();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.print_barcode = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -423,7 +424,8 @@
             this.Price,
             this.UnitCode,
             this.edit,
-            this.delete});
+            this.delete,
+            this.print_barcode});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Light", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -452,6 +454,46 @@
             this.PriceListDG.Size = new System.Drawing.Size(419, 209);
             this.PriceListDG.TabIndex = 10;
             this.PriceListDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PriceListDG_CellContentClick);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnNewPrice);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(3, 230);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(419, 35);
+            this.panel2.TabIndex = 11;
+            // 
+            // btnNewPrice
+            // 
+            this.btnNewPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNewPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.btnNewPrice.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(213)))), ((int)(((byte)(254)))));
+            this.btnNewPrice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewPrice.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnNewPrice.Location = new System.Drawing.Point(275, 6);
+            this.btnNewPrice.Name = "btnNewPrice";
+            this.btnNewPrice.Size = new System.Drawing.Size(131, 25);
+            this.btnNewPrice.TabIndex = 25;
+            this.btnNewPrice.Text = "&Add New Price";
+            this.btnNewPrice.UseVisualStyleBackColor = false;
+            this.btnNewPrice.Click += new System.EventHandler(this.btnNewPrice_Click);
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = global::Jaezer_POS_and_Inventory.Properties.Resources.icons8_edit_16;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewImageColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn2.HeaderText = "";
+            this.dataGridViewImageColumn2.Image = global::Jaezer_POS_and_Inventory.Properties.Resources.icons8_remove_16;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             // 
             // id
             // 
@@ -500,45 +542,13 @@
             this.delete.Name = "delete";
             this.delete.Width = 5;
             // 
-            // panel2
+            // print_barcode
             // 
-            this.panel2.Controls.Add(this.btnNewPrice);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(3, 230);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(419, 35);
-            this.panel2.TabIndex = 11;
-            // 
-            // btnNewPrice
-            // 
-            this.btnNewPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNewPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
-            this.btnNewPrice.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(213)))), ((int)(((byte)(254)))));
-            this.btnNewPrice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewPrice.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnNewPrice.Location = new System.Drawing.Point(275, 6);
-            this.btnNewPrice.Name = "btnNewPrice";
-            this.btnNewPrice.Size = new System.Drawing.Size(131, 25);
-            this.btnNewPrice.TabIndex = 25;
-            this.btnNewPrice.Text = "&Add New Price";
-            this.btnNewPrice.UseVisualStyleBackColor = false;
-            this.btnNewPrice.Click += new System.EventHandler(this.btnNewPrice_Click);
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = global::Jaezer_POS_and_Inventory.Properties.Resources.icons8_edit_16;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewImageColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // dataGridViewImageColumn2
-            // 
-            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn2.HeaderText = "";
-            this.dataGridViewImageColumn2.Image = global::Jaezer_POS_and_Inventory.Properties.Resources.icons8_remove_16;
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.print_barcode.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.print_barcode.HeaderText = "";
+            this.print_barcode.Image = ((System.Drawing.Image)(resources.GetObject("print_barcode.Image")));
+            this.print_barcode.Name = "print_barcode";
+            this.print_barcode.Width = 5;
             // 
             // frmProduct
             // 
@@ -589,6 +599,12 @@
         private System.Windows.Forms.Button btnNewPrice;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAddNew;
+        private MetroFramework.Controls.MetroLabel lblUnitCode;
+        private MetroFramework.Controls.MetroLabel metroLabel3;
+        private MetroFramework.Controls.MetroTextBox txtDayBExp;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Barcode;
         private System.Windows.Forms.DataGridViewTextBoxColumn Variant;
@@ -596,11 +612,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn UnitCode;
         private System.Windows.Forms.DataGridViewImageColumn edit;
         private System.Windows.Forms.DataGridViewImageColumn delete;
-        private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnAddNew;
-        private MetroFramework.Controls.MetroLabel lblUnitCode;
-        private MetroFramework.Controls.MetroLabel metroLabel3;
-        private MetroFramework.Controls.MetroTextBox txtDayBExp;
+        private System.Windows.Forms.DataGridViewImageColumn print_barcode;
     }
 }

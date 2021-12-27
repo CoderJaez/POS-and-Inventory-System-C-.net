@@ -232,7 +232,7 @@ namespace Jaezer_POS_and_Inventory.View.Forms
 
             offset += lineheight10;
             layout = new RectangleF(new PointF(startX, startY + offset), layoutSize);
-            e.Graphics.DrawString("===========================", bft, new SolidBrush(Color.Black), layout, formatCenter); //Contact No
+            e.Graphics.DrawString("===========================", bft, new SolidBrush(Color.Black), layout, formatCenter); 
             offset += lineheight10;
             //int i = 1;
             e.Graphics.DrawString(Body, bft, new SolidBrush(Color.Black), new Point((int)startX, (int)startY + (int)offset));

@@ -47,6 +47,7 @@
             this.btnInventory = new System.Windows.Forms.Button();
             this.btnExpenses = new System.Windows.Forms.Button();
             this.btnReports = new System.Windows.Forms.Button();
+            this.btnBackupDB = new System.Windows.Forms.Button();
             this.SettingsPanel = new System.Windows.Forms.Panel();
             this.btnExpensesSettings = new System.Windows.Forms.Button();
             this.btnUser = new System.Windows.Forms.Button();
@@ -129,6 +130,7 @@
             this.SidePanelMenu.Controls.Add(this.btnInventory);
             this.SidePanelMenu.Controls.Add(this.btnExpenses);
             this.SidePanelMenu.Controls.Add(this.btnReports);
+            this.SidePanelMenu.Controls.Add(this.btnBackupDB);
             this.SidePanelMenu.Controls.Add(this.SettingsPanel);
             this.SidePanelMenu.Controls.Add(this.btnLogout);
             this.SidePanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -382,6 +384,29 @@
             this.btnReports.UseVisualStyleBackColor = false;
             this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
             // 
+            // btnBackupDB
+            // 
+            this.btnBackupDB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.btnBackupDB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBackupDB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnBackupDB.FlatAppearance.BorderSize = 0;
+            this.btnBackupDB.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.btnBackupDB.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(213)))), ((int)(((byte)(254)))));
+            this.btnBackupDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBackupDB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnBackupDB.Image = ((System.Drawing.Image)(resources.GetObject("btnBackupDB.Image")));
+            this.btnBackupDB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBackupDB.Location = new System.Drawing.Point(3, 471);
+            this.btnBackupDB.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.btnBackupDB.Name = "btnBackupDB";
+            this.btnBackupDB.Size = new System.Drawing.Size(162, 30);
+            this.btnBackupDB.TabIndex = 14;
+            this.btnBackupDB.Text = "Backup Databse";
+            this.btnBackupDB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBackupDB.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBackupDB.UseVisualStyleBackColor = false;
+            this.btnBackupDB.Click += new System.EventHandler(this.btnBackupDB_Click);
+            // 
             // SettingsPanel
             // 
             this.SettingsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
@@ -390,7 +415,7 @@
             this.SettingsPanel.Controls.Add(this.btnCompany);
             this.SettingsPanel.Controls.Add(this.btnInventorySetup);
             this.SettingsPanel.Controls.Add(this.btnSettings);
-            this.SettingsPanel.Location = new System.Drawing.Point(0, 468);
+            this.SettingsPanel.Location = new System.Drawing.Point(0, 501);
             this.SettingsPanel.Margin = new System.Windows.Forms.Padding(0);
             this.SettingsPanel.MaximumSize = new System.Drawing.Size(166, 150);
             this.SettingsPanel.MinimumSize = new System.Drawing.Size(166, 30);
@@ -526,7 +551,7 @@
             this.btnLogout.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(3, 501);
+            this.btnLogout.Location = new System.Drawing.Point(3, 534);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(162, 30);
@@ -633,5 +658,6 @@
         private System.Windows.Forms.Button btnInventory;
         private System.Windows.Forms.Button btnExpensesSettings;
         private System.Windows.Forms.Button btnExpenses;
+        private System.Windows.Forms.Button btnBackupDB;
     }
 }

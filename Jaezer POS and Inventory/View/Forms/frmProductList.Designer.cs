@@ -39,8 +39,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.ProductDG = new System.Windows.Forms.DataGridView();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.SearchTxt = new MetroFramework.Controls.MetroTextBox();
             this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.n = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,6 +49,8 @@
             this.HasExpiry = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.insert = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.SearchTxt = new MetroFramework.Controls.MetroTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProductDG)).BeginInit();
             this.SuspendLayout();
@@ -161,48 +161,6 @@
             this.ProductDG.TabIndex = 8;
             this.ProductDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProductDG_CellContentClick);
             // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = global::Jaezer_POS_and_Inventory.Properties.Resources.icons8_checked_16;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            // 
-            // SearchTxt
-            // 
-            // 
-            // 
-            // 
-            this.SearchTxt.CustomButton.Image = null;
-            this.SearchTxt.CustomButton.Location = new System.Drawing.Point(277, 1);
-            this.SearchTxt.CustomButton.Name = "";
-            this.SearchTxt.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.SearchTxt.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.SearchTxt.CustomButton.TabIndex = 1;
-            this.SearchTxt.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.SearchTxt.CustomButton.UseSelectable = true;
-            this.SearchTxt.CustomButton.Visible = false;
-            this.SearchTxt.DisplayIcon = true;
-            this.SearchTxt.Icon = ((System.Drawing.Image)(resources.GetObject("SearchTxt.Icon")));
-            this.SearchTxt.Lines = new string[0];
-            this.SearchTxt.Location = new System.Drawing.Point(14, 68);
-            this.SearchTxt.MaxLength = 32767;
-            this.SearchTxt.Name = "SearchTxt";
-            this.SearchTxt.PasswordChar = '\0';
-            this.SearchTxt.PromptText = "Search Product";
-            this.SearchTxt.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.SearchTxt.SelectedText = "";
-            this.SearchTxt.SelectionLength = 0;
-            this.SearchTxt.SelectionStart = 0;
-            this.SearchTxt.ShortcutsEnabled = true;
-            this.SearchTxt.Size = new System.Drawing.Size(299, 23);
-            this.SearchTxt.TabIndex = 9;
-            this.SearchTxt.UseSelectable = true;
-            this.SearchTxt.WaterMark = "Search Product";
-            this.SearchTxt.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.SearchTxt.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.SearchTxt.TextChanged += new System.EventHandler(this.SearchTxt_TextChanged);
-            // 
             // ProductID
             // 
             this.ProductID.HeaderText = "";
@@ -280,7 +238,7 @@
             this.Qty.Name = "Qty";
             this.Qty.ReadOnly = true;
             this.Qty.Visible = false;
-            this.Qty.Width = 48;
+            this.Qty.Width = 50;
             // 
             // insert
             // 
@@ -290,6 +248,48 @@
             this.insert.Name = "insert";
             this.insert.ReadOnly = true;
             this.insert.Width = 5;
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = global::Jaezer_POS_and_Inventory.Properties.Resources.icons8_checked_16;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            // 
+            // SearchTxt
+            // 
+            // 
+            // 
+            // 
+            this.SearchTxt.CustomButton.Image = null;
+            this.SearchTxt.CustomButton.Location = new System.Drawing.Point(277, 1);
+            this.SearchTxt.CustomButton.Name = "";
+            this.SearchTxt.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.SearchTxt.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.SearchTxt.CustomButton.TabIndex = 1;
+            this.SearchTxt.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.SearchTxt.CustomButton.UseSelectable = true;
+            this.SearchTxt.CustomButton.Visible = false;
+            this.SearchTxt.DisplayIcon = true;
+            this.SearchTxt.Icon = ((System.Drawing.Image)(resources.GetObject("SearchTxt.Icon")));
+            this.SearchTxt.Lines = new string[0];
+            this.SearchTxt.Location = new System.Drawing.Point(14, 68);
+            this.SearchTxt.MaxLength = 32767;
+            this.SearchTxt.Name = "SearchTxt";
+            this.SearchTxt.PasswordChar = '\0';
+            this.SearchTxt.PromptText = "Search Product";
+            this.SearchTxt.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.SearchTxt.SelectedText = "";
+            this.SearchTxt.SelectionLength = 0;
+            this.SearchTxt.SelectionStart = 0;
+            this.SearchTxt.ShortcutsEnabled = true;
+            this.SearchTxt.Size = new System.Drawing.Size(299, 23);
+            this.SearchTxt.TabIndex = 9;
+            this.SearchTxt.UseSelectable = true;
+            this.SearchTxt.WaterMark = "Search Product";
+            this.SearchTxt.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.SearchTxt.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.SearchTxt.TextChanged += new System.EventHandler(this.SearchTxt_TextChanged);
             // 
             // frmProductList
             // 

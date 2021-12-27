@@ -94,7 +94,7 @@ namespace Jaezer_POS_and_Inventory.Model
                     using (cmd = new MySqlCommand($"UPDATE tbl_product SET deleted = true where id = {id}", con))
                     {
                         con.Open();
-                        MySqlTransaction tr = con.BeginTransaction();
+                        tr = con.BeginTransaction();
                         cmd.ExecuteNonQuery();
 
                         cmd.CommandText = $"UPDATE tbl_unit_grp set deleted = true where prodID = {id}";
@@ -102,12 +102,14 @@ namespace Jaezer_POS_and_Inventory.Model
 
                         cmd.CommandText = $"UPDATE tbl_pricing set deleted = true  where  prodID = {id}";
                         cmd.ExecuteNonQuery();
+                        tr.Commit();
                         return true;
                     }
                 }
             }
             catch (Exception ex)
             {
+                tr.Rollback();
                 MessageBox.Show(ex.Message);
                 return false;
             }
@@ -121,17 +123,16 @@ namespace Jaezer_POS_and_Inventory.Model
                 {
                     using(cmd = new MySqlCommand("", con))
                     {
+                        con.Open();
                         query = "update tbl_product set";
                         foreach (var id in ids)
                             query += $" deleted = CASE WHEN id = {id} THEN true else deleted END,";
 
                         query = query.Remove(query.Length - 1, 1);
-                        query += $" where id in({string.Join(",",ids)})";
+                        query += $" where id in ({string.Join(",",ids)})";
                         cmd.CommandText = query;
-                        con.Open();
-                        MySqlTransaction tr = con.BeginTransaction();
+                        tr = con.BeginTransaction();
                         cmd.ExecuteNonQuery();
-
                         foreach(int id in ids)
                         {
                             cmd.CommandText = $"UPDATE tbl_unit_grp set deleted = true where prodID = {id}";
@@ -140,12 +141,14 @@ namespace Jaezer_POS_and_Inventory.Model
                             cmd.CommandText = $"UPDATE tbl_pricing set prodID = {id}";
                             cmd.ExecuteNonQuery();
                         }
+                        tr.Commit();
                         return true;
                     }
                 }
             }
             catch (Exception ex)
             {
+                tr.Rollback();
                 MessageBox.Show(ex.Message + $"\n{cmd.CommandText}");
                 return false;
             }

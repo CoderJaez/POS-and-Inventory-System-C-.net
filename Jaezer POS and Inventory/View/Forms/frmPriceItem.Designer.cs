@@ -49,13 +49,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cbUnitCode = new MetroFramework.Controls.MetroComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.txtBarcode = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.barcode = new System.Windows.Forms.TextBox();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.appData1 = new Jaezer_POS_and_Inventory.DataSets.AppData();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BarcodeImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appData1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -136,10 +138,12 @@
             // 
             // labelEAN13
             // 
+            this.labelEAN13.Font = new System.Drawing.Font("Code EAN13", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.labelEAN13.Location = new System.Drawing.Point(320, 60);
             this.labelEAN13.Name = "labelEAN13";
             this.labelEAN13.Size = new System.Drawing.Size(132, 46);
             this.labelEAN13.TabIndex = 43;
+            this.labelEAN13.Text = "123456789101";
             this.labelEAN13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnGenerateBarcode
@@ -191,6 +195,7 @@
             // 
             // BarcodeImage
             // 
+            this.BarcodeImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BarcodeImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.BarcodeImage.Location = new System.Drawing.Point(306, 53);
             this.BarcodeImage.Name = "BarcodeImage";
@@ -315,20 +320,6 @@
             this.cbUnitCode.UseSelectable = true;
             this.cbUnitCode.ValueMember = "id";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 53);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 17);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "Barcode:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // printDocument1
-            // 
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
-            // 
             // txtBarcode
             // 
             this.txtBarcode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -339,6 +330,16 @@
             this.txtBarcode.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.txtBarcode.TextChanged += new System.EventHandler(this.txtBarcode_TextChanged);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(23, 53);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 17);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Barcode:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // barcode
             // 
             this.barcode.Location = new System.Drawing.Point(88, 53);
@@ -346,6 +347,15 @@
             this.barcode.Size = new System.Drawing.Size(197, 25);
             this.barcode.TabIndex = 44;
             this.barcode.TextChanged += new System.EventHandler(this.barcode_TextChanged);
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // appData1
+            // 
+            this.appData1.DataSetName = "AppData";
+            this.appData1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // frmPriceItem
             // 
@@ -367,6 +377,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BarcodeImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appData1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -397,5 +408,6 @@
         private System.Windows.Forms.Label labelEAN13;
         private System.Windows.Forms.Label txtBarcode;
         private System.Windows.Forms.TextBox barcode;
+        private DataSets.AppData appData1;
     }
 }

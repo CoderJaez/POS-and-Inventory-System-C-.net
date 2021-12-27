@@ -214,25 +214,26 @@ namespace Jaezer_POS_and_Inventory.View.Forms
         {
             if(e.RowIndex >= 0)
             {
-                switch(PriceListDG.Columns[e.ColumnIndex].Name)
+                var currentRow = PriceListDG.CurrentRow;
+                switch (PriceListDG.Columns[e.ColumnIndex].Name)
                 {
                     case "edit":
-                        ShowPriceItemForm(PriceListDG.CurrentRow);
+                        ShowPriceItemForm(currentRow);
                         break;
                     case "delete":
                         var result = MessageBox.Show("Do you want to delete selected data?", pmodel.AppName, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                         if(result == DialogResult.Yes)
                         {
-                            int id = int.Parse(PriceListDG.CurrentRow.Cells["id"].Value.ToString());
+                            int id = int.Parse(currentRow.Cells["id"].Value.ToString());
                             if (pmodel.delete(id))
                             {
                                 MessageBox.Show("Selected Data Deleted Successfully.", pmodel.AppName);
-                                PriceListDG.Rows.Remove(PriceListDG.CurrentRow);
+                                PriceListDG.Rows.Remove(currentRow);
                             }
                         }
                         break;
-                    case "PrintPreview":
-
+                    case "print_barcode":
+                        frmPriceItem.Instance.PrintBarcode(currentRow.Cells["Barcode"].Value.ToString(), currentRow.Cells["Price"].Value.ToString(), currentRow.Cells["Variant"].Value.ToString());
                         break;
                 }
             }

@@ -13,6 +13,8 @@ using Zen.Barcode;
 using System.Drawing.Printing;
 using System.Drawing.Text;
 using System.IO;
+using Microsoft.Reporting.WinForms;
+using System.Drawing.Drawing2D;
 
 namespace Jaezer_POS_and_Inventory.View.Forms
 {
@@ -24,17 +26,19 @@ namespace Jaezer_POS_and_Inventory.View.Forms
         PrivateFontCollection pfc = new PrivateFontCollection();
         ToolTip toolTip;
         private bool isForUpdate;
-        int w = 100;
-        int h = 50;
-        int barcodes = 100;
+        int barcodes = 50;
         int rows = 0;
         int cols = 0;
         int x = 20, y = 10;
 
-
+        public frmPriceItem()
+        {
+            InitializeComponent();
+        }
         public frmPriceItem(bool forUpdate, PriceItem _obj)
         {
             InitializeComponent();
+            pfc.AddFontFile(Directory.GetCurrentDirectory() + "/ean13.ttf");
             isForUpdate = forUpdate;
             ProdName.Text = $"{_obj.ProductName.ToUpper()} Item Price";
             obj = _obj;
@@ -46,6 +50,15 @@ namespace Jaezer_POS_and_Inventory.View.Forms
             toolTip.SetToolTip(btnGenerateBarcode, "Generate Barcode");
         }
 
+        private static frmPriceItem _instance;
+        public static frmPriceItem Instance
+        {
+            get {
+                if (_instance == null)
+                    _instance = new frmPriceItem();
+                return _instance;
+            }
+        }
 
         private void UnitList()
         {
@@ -130,14 +143,12 @@ namespace Jaezer_POS_and_Inventory.View.Forms
            
         }
 
-        private void ean13()
+        private string ean13(string code)
         {
             string barcode, check12Digits;
-            check12Digits = txtBarcode.Text.PadRight(12, '0');
+            check12Digits = code.PadRight(12, '0');
             barcode = EAN13.CODE(check12Digits);
-            pfc.AddFontFile(Directory.GetCurrentDirectory() + "/ean13.ttf");
-            labelEAN13.Font = new Font(pfc.Families[0], 24);
-            labelEAN13.Text = barcode;
+            return barcode;
 
 
         }
@@ -164,16 +175,50 @@ namespace Jaezer_POS_and_Inventory.View.Forms
           
         }
 
+        //private void btnPrintPreview_Click(object sender, EventArgs e)
+        //{
+        //    rows = barcodes / 6;
+        //    cols = barcodes % 6;
+        //    pd.Document = printDocument1;
+        //    printDocument1.DefaultPageSettings.PaperSize = new PaperSize("Letter", 850, 1300);
+        //    printDocument1.DocumentName = "Barcode";
+        //    (pd as Form).WindowState = FormWindowState.Maximized;
+        //    pd.ShowDialog();
+        //}
+
+
         private void btnPrintPreview_Click(object sender, EventArgs e)
         {
-            rows = barcodes / 6;
-            cols = barcodes % 6;
-            pd.Document = printDocument1;
-            printDocument1.DefaultPageSettings.PaperSize = new PaperSize("Legal", 850, 1100);
-            (pd as Form).WindowState = FormWindowState.Maximized;
-            pd.ShowDialog();
+            PrintBarcode(txtBarcode.Text, txtPrice.Text, txtVariant.Text);
         }
 
+        public  void  PrintBarcode(string barcode, string price, string variant)
+        {
+            appData1.Clear();
+            string barcodeTxt = ean13(barcode);
+            price = string.IsNullOrEmpty(price) ? "0.00" : decimal.Parse(price).ToString("N");
+            for (int i = 0; i < 13; i++)
+            {
+                appData1.Barcode.AddBarcodeRow(variant, price, barcodeTxt);
+            }
+
+            ReportDataSource rs = new ReportDataSource();
+            rs.Name = "Barcode";
+            rs.Value = appData1.Barcode;
+            string rdlc = "Jaezer_POS_and_Inventory.Reports.BarcodeRpt.rdlc";
+            var p = new ReportParameter[]
+           {
+                new ReportParameter("BusinessName", ""),
+                new ReportParameter("Address", ""),
+                new ReportParameter("ContactNo", ""),
+                new ReportParameter("Logo", ""),
+                new ReportParameter("DateCreatedAt", ""),
+           };
+            frmPrintPreview frm = new frmPrintPreview(rs, rdlc, p);
+            frm.ShowDialog();
+        }
+
+       
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             int pageHeight = (int)e.PageSettings.PrintableArea.Height;
@@ -185,11 +230,12 @@ namespace Jaezer_POS_and_Inventory.View.Forms
                 x = 20;
                 for (int z = 1; z <= 6; z++)
                 {
-                    e.Graphics.DrawString(labelEAN13.Text, new Font(pfc.Families[0], 30), new SolidBrush(Color.Black), x, y);
+                    e.Graphics.DrawString(labelEAN13.Text, new Font(pfc.Families[0], 24), new SolidBrush(Color.Black), x, y - 10);
+                    e.Graphics.DrawString($"{z}", new Font("Arial", 8), new SolidBrush(Color.Red), x, y );
                     //x = x + w + 25;
                     x += 130;
                 }
-                //y = y + h + 35;
+                ////y = y + h + 35;
                 y += 60;
 
                 if (y >= pageHeight)
@@ -211,7 +257,7 @@ namespace Jaezer_POS_and_Inventory.View.Forms
                 x = 20;
                 for (int z = 1; z <= cols; z++)
                 {
-                    e.Graphics.DrawString(labelEAN13.Text, new Font(pfc.Families[0], 30), new SolidBrush(Color.Black), x, y);
+                    e.Graphics.DrawString(labelEAN13.Text, new Font(pfc.Families[0], 24), new SolidBrush(Color.Black), x, y);
                     //e.Graphics.DrawImage(BarcodeImage.Image, x, y, w, h);
                     //x = x + w + 30;
                     x += 130;
@@ -224,7 +270,8 @@ namespace Jaezer_POS_and_Inventory.View.Forms
            if(txtBarcode.Text != "" && txtBarcode.Text.Length >=12)
             {
                 txtBarcode.Text = txtBarcode.Text.Substring(0, 12);
-                ean13();
+                //labelEAN13.Font = new Font(pfc.Families[0], 24);
+                labelEAN13.Text = ean13(txtBarcode.Text);
             }
         }
 

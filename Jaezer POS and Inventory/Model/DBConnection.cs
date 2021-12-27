@@ -7,7 +7,6 @@ using MySql.Data.MySqlClient;
 using System.Windows.Forms;
 using FluentValidation;
 using System.IO;
-
 namespace Jaezer_POS_and_Inventory.Model
 {
     public class DBConnection
@@ -17,7 +16,8 @@ namespace Jaezer_POS_and_Inventory.Model
         private string server = Properties.Settings.Default.server;
         private string port = Properties.Settings.Default.port;
         private string db = Properties.Settings.Default.database;
-        
+
+        protected MySqlTransaction tr;
         protected MySqlConnection con;
         protected MySqlCommand cmd;
         protected string connection = null;
@@ -83,6 +83,41 @@ namespace Jaezer_POS_and_Inventory.Model
                 return false;
             }
            
+        }
+
+
+        public async Task<bool> BackupDatabaseAsync(string path)
+        {
+            var result = await Task.Run(() => MakeBackup(path));
+            return result;
+        }
+
+        private bool MakeBackup(string path)
+        {
+            try
+            {
+                using ( con = new MySqlConnection(ConnString))
+                {
+                    using ( cmd = new MySqlCommand())
+                    {
+
+                        using (var mb = new MySqlBackup(cmd))
+                        {
+                            cmd.Connection = con;
+                            con.Open();
+                            string filename = $"PosInventoryDB_{DateTime.Now.ToString("MMddyyyyHHmmss")}.sql";
+                            mb.ExportToFile($@"{path}/{filename}");
+                            
+                        }
+                    }
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Back up database failed. \nContact the administrator\n{ex.Message}");
+                return false;
+            }
         }
     
     }

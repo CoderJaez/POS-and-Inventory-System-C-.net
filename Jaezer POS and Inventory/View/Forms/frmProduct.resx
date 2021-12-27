@@ -157,4 +157,14 @@
   <metadata name="delete.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="print_barcode.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="print_barcode.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAABaSURBVDhP3U1BCgBBCOqf9Zj9+S4FgkmX9jSMIGPmmF0Ed3/xgpPPXoMGNTx5DRrU8OQVIuLB
+        csv8WwUgCnVmn3XNENmYS76AmX3oAwtysUErQPuWfw4fB7MPUA3PQeE9hs4AAAAASUVORK5CYII=
+</value>
+  </data>
 </root>

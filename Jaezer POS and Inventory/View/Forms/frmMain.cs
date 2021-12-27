@@ -296,5 +296,18 @@ namespace Jaezer_POS_and_Inventory.View
             MainPanel.Controls.Add(uc);
             uc.Dock = MainPanel.Dock;
         }
+
+        private void btnBackupDB_Click(object sender, EventArgs e)
+        {
+
+            timer1.Start();
+            ButtonClicked(btnExpenses);
+            isSettingClicked = false;
+            ModuleDesc.Text = "Backup Database";
+            BackupDbUC uc = new BackupDbUC();
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(uc);
+            uc.Dock = MainPanel.Dock;
+        }
     }
 }
