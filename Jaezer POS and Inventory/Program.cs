@@ -29,9 +29,12 @@ namespace Jaezer_POS_and_Inventory
                 DatabaseName = Properties.Settings.Default.database,
                 Server = Properties.Settings.Default.server,
                 Username = Properties.Settings.Default.user,
-                Password = Properties.Settings.Default.password
+                Password = Properties.Settings.Default.password,
+                Port = Properties.Settings.Default.port
             };
             var db = new DBConnection();
+
+
             //bool isDBSetup = Properties.Settings.Default.isDBSetup;
             //bool isNameSetup = Properties.Settings.Default.isBNameSetup;
             Application.SetCompatibleTextRenderingDefault(false);
@@ -43,6 +46,8 @@ namespace Jaezer_POS_and_Inventory
             }
             else
                 Application.Run(new frmSetup());
+
+
 
 
 

@@ -348,3 +348,97 @@ D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inve
 D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\System.Memory.xml
 D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\System.Numerics.Vectors.xml
 D:\Visual Studio Projects\c#\Jaezer POS and Inventory  v1.01\Jaezer POS and Inventory\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.csprojResolveAssemblyReference.cache
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.Properties.Resources.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.Form1.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmAddress.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmAdminAccess.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmCancelOrder.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmChange.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmCriticalItems.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmDailySales.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmDiscount.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmEditStockPrice.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmExpenseCat.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmExpenses.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmExpiryItems.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmInventorySettings.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmLoadingScreen.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmLogin.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmPOS.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmPriceItem.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmPrintPreview.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProduct.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProductInquiry.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProductList.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmProductListSale.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmSettlePayment.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmSetup.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmSuplier.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmUnitCollection.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmBrand.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmCategory.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.frmMain.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmUnitGroups.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.Forms.frmUser.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.frmChangePass.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.BackupDbUC.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.BrandUC.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.CategoryUC.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.CompanyProfileUC.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.DailySalesUC.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.DashboardUC.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.ExpenseCatUC.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.ExpensesUC.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.InventoryUC.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.MeasuringUnitsUC.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.ProductUC.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.ReportsUC.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.SaleEventUC.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.StockAdjustmentUC.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.StockInUC.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.SupplierUC.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer_POS_and_Inventory.View.User_Control.UserUC.resources
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.csproj.GenerateResource.Cache
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\RdlCompile.cache
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\RdlCompile.compiled
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.exe.config
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.exe.manifest
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.application
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.exe
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\Jaezer POS and Inventory.pdb
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\BouncyCastle.Crypto.dll
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\BouncyCastle.Cryptography.dll
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\Dapper.dll
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\Google.Protobuf.dll
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\MySql.Data.dll
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\MySqlBackup.dll
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\System.Buffers.dll
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\System.dll
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\System.IO.Pipelines.dll
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\System.Memory.dll
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\System.Numerics.Vectors.dll
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\Zen.Barcode.Core.dll
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\ZstdSharp.dll
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\BouncyCastle.Crypto.xml
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\BouncyCastle.Cryptography.xml
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\Dapper.xml
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\Google.Protobuf.pdb
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\Google.Protobuf.xml
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\System.xml
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\System.Buffers.xml
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\System.IO.Pipelines.xml
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\System.Memory.xml
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\System.Numerics.Vectors.xml
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.exe.manifest
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.application
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.exe
+D:\Projects\Desktop App\VS 2015\Client\POS-and-Inventory-System-C-.net\Jaezer POS and Inventory\obj\Debug\Jaezer POS and Inventory.pdb

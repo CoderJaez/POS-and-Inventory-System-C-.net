@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FluentValidation;
 using MySql.Data.MySqlClient;
+
 namespace Jaezer_POS_and_Inventory.Model
 {
     public class InventoryModel : StockinModel

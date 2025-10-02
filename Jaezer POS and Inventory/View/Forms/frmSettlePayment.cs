@@ -225,17 +225,26 @@ namespace Jaezer_POS_and_Inventory.View.Forms
 
             offset += lineheight10;
             layout = new RectangleF(new PointF(startX, startY + offset), layoutSize);
-            e.Graphics.DrawString(DateTime.Now.ToString("MM-dd-yyyy"), bft, new SolidBrush(Color.Black), layout, formatleft);
+            e.Graphics.DrawString($"Date: {DateTime.Now.ToString("MM/dd/yyyy")}", bft, new SolidBrush(Color.Black), layout, formatleft);
             offset += lineheight10;
             layout = new RectangleF(new PointF(startX, startY + offset), layoutSize);
             e.Graphics.DrawString($"TRAN#:{ProdList.First().Invoice}", bft, new SolidBrush(Color.Black), layout, formatleft);
 
             offset += lineheight10;
             layout = new RectangleF(new PointF(startX, startY + offset), layoutSize);
-            e.Graphics.DrawString("===========================", bft, new SolidBrush(Color.Black), layout, formatCenter); 
-            offset += lineheight10;
-            //int i = 1;
-            e.Graphics.DrawString(Body, bft, new SolidBrush(Color.Black), new Point((int)startX, (int)startY + (int)offset));
+            e.Graphics.DrawString("===========================", bft, new SolidBrush(Color.Black), layout, formatCenter);
+            foreach (var item in ProdList)
+            {
+                offset += lineheight10;
+                layout = new RectangleF(new PointF(startX, startY + offset), layoutSize);
+                e.Graphics.DrawString(item.ProductName, bft, new SolidBrush(Color.Black), layout, formatleft);
+                e.Graphics.DrawString($"₱{item.Total.ToString("N2")}", bft, new SolidBrush(Color.Black), layout, formatRight);
+
+                offset += lineheight10;
+                layout = new RectangleF(new PointF(startX, startY + offset), layoutSize);
+                e.Graphics.DrawString($"{item.Qty} X ₱{item.Price.ToString("N2")}", bft, new SolidBrush(Color.Black), layout, formatleft);
+
+            }
             offset += lineheight10 + offsetY;
             layout = new RectangleF(new PointF(startX, startY + offset), layoutSize);
             e.Graphics.DrawString("===========================", bft, new SolidBrush(Color.Black), layout, formatCenter); //Contact No
@@ -246,34 +255,22 @@ namespace Jaezer_POS_and_Inventory.View.Forms
             offset += lineheight10;
             layout = new RectangleF(new PointF(startX, startY + offset), layoutSize);
             e.Graphics.DrawString("TOTAL", bft, new SolidBrush(Color.Black), layout, formatleft);
-            e.Graphics.DrawString(pt.Total.ToString(), bft, new SolidBrush(Color.Black), layout, formatRight);
+            e.Graphics.DrawString($"₱{pt.Total.ToString()}", bft, new SolidBrush(Color.Black), layout, formatRight);
 
             offset += lineheight10;
             layout = new RectangleF(new PointF(startX, startY + offset), layoutSize);
             e.Graphics.DrawString("CASH RCVD", bft, new SolidBrush(Color.Black), layout, formatleft);
-            e.Graphics.DrawString(pt.CashTendered.ToString("N2"), bft, new SolidBrush(Color.Black), layout, formatRight);
+            e.Graphics.DrawString($"₱{pt.CashTendered.ToString("N2")}", bft, new SolidBrush(Color.Black), layout, formatRight);
             offset += lineheight10;
             layout = new RectangleF(new PointF(startX, startY + offset), layoutSize);
             e.Graphics.DrawString("CHANGE", bft, new SolidBrush(Color.Black), layout, formatleft);
-            e.Graphics.DrawString(pt.Change.ToString("N"), bft, new SolidBrush(Color.Black), layout, formatRight);
+            e.Graphics.DrawString($"₱{pt.Change.ToString("N")}", bft, new SolidBrush(Color.Black), layout, formatRight);
 
             offset += lineheight10;
             layout = new RectangleF(new PointF(startX, startY + offset), layoutSize);
             e.Graphics.DrawString("===========================", bft, new SolidBrush(Color.Black), layout, formatCenter); //Contact No
 
-            offset += lineheight10;
-            layout = new RectangleF(new PointF(startX, startY + offset), layoutSize);
-            e.Graphics.DrawString("VAT SALES", bft, new SolidBrush(Color.Black), layout, formatleft);
-            e.Graphics.DrawString(pt.SubTotal.ToString("N"), bft, new SolidBrush(Color.Black), layout, formatRight);
-
-            offset += lineheight10;
-            layout = new RectangleF(new PointF(startX, startY + offset), layoutSize);
-            e.Graphics.DrawString("Vat", bft, new SolidBrush(Color.Black), layout, formatleft);
-            e.Graphics.DrawString(pt.Vat.ToString("N"), bft, new SolidBrush(Color.Black), layout, formatRight);
-
-            offset += lineheight10;
-            layout = new RectangleF(new PointF(startX, startY + offset), layoutSize);
-            e.Graphics.DrawString("===========================", bft, new SolidBrush(Color.Black), layout, formatCenter);
+          
             offset += lineheight10;
             layout = new RectangleF(new PointF(startX, startY + offset), layoutSize);
             e.Graphics.DrawString("THIS IS NOT AN OFFICIAL RECIEPT", bft, new SolidBrush(Color.Black), layout, formatCenter);
@@ -287,13 +284,8 @@ namespace Jaezer_POS_and_Inventory.View.Forms
         {
             ReceiptDoc.DefaultPageSettings.PaperSize = new PaperSize("Receipt", 190, int.MaxValue);
             prntAreaWidth = ReceiptDoc.DefaultPageSettings.PaperSize.Width;
-            
-           
-            Body += string.Format("{0,-10}{1,10:N2}{2,10:N2}\n", "Description", "Price", "Amnt");
-            foreach (var item in ProdList)
-            {
-                Body += itemFormat(item.ProductName, item.Qty, item.Price, item.Total);
-            }
+
+
             ReceiptDoc.Print();
             //ppd.Document = ReceiptDoc;
             //ppd.ShowDialog();

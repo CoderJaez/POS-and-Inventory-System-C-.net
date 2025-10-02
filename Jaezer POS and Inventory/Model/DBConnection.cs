@@ -38,9 +38,10 @@ namespace Jaezer_POS_and_Inventory.Model
                     return true;
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return false;
+                MessageBox.Show(ex.Message);
+                throw new Exception(ex.Message);
             }
         }
 
